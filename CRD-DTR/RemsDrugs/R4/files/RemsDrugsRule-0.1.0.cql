@@ -18,7 +18,7 @@ define DOCUMENTATION_REQUIRED:
   true
 
 define RESULT_InfoLink:
-    'https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/Downloads/ProviderComplianceTipsforHospitalBedsandAccessories-ICN909476.pdf'
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Turalio_2020_08_04_REMS_Full.pdf'
 
 define RESULT_QuestionnaireOrderUri:
     'Questionnaire/TuralioRemsPatientEnrollment'  
