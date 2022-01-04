@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "HomeBloodGlucoseMonitorLab",
+  "id": "HomeBloodGlucoseMonitor",
   "name": "HomeBloodGlucoseMonitorLab",
   "title": "Blood Glucose Laboratory Test Results",
   "status": "draft",
