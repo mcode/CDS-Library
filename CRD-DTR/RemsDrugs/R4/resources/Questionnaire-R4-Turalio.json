@@ -138,6 +138,13 @@
               "valueCoding": {
                 "display": "lbs"
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/cql",
+                "expression": "\"RemsDrugsPrepopulation\".LatestWeightResult"
+              }
             }
           ],
           "linkId": "1.9",
@@ -230,11 +237,29 @@
           "linkId": "1.12",
           "text": "Is the patient currently taking pexidartinib (i.e., started prior to REMS enrollment)?",
           "type": "boolean",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/cql",
+                "expression": "\"RemsDrugsPrepopulation\".TakingTuralio"
+              }
+            }
+          ],
           "required": false,
           "item": [
             {
               "type": "date",
               "linkId": "1.12.1",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".TuralioDate"
+                  }
+                }
+              ],
               "text": "If yes: When did patient start pexidartinib? Date (MM/DD/YYYY):",
               "enableWhen": [
                 {
@@ -455,13 +480,31 @@
               "linkId": "3.1.2",
               "text": "Baseline Value (units, reference range)",
               "type": "string",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".ASTResult"
+                  }
+                }
+              ]
             },
             {
               "linkId": "3.1.3",
               "text": "Date",
               "type": "date",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".ASTDate"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -495,13 +538,31 @@
               "linkId": "3.1.2",
               "text": "Baseline Value (units, reference range)",
               "type": "string",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".ALTResult"
+                  }
+                }
+              ]
             },
             {
               "linkId": "3.1.3",
               "text": "Date",
               "type": "date",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".ALTDate"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -535,13 +596,31 @@
               "linkId": "3.1.2",
               "text": "Baseline Value (units, reference range)",
               "type": "string",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".GGTResult"
+                  }
+                }
+              ]
             },
             {
               "linkId": "3.1.3",
               "text": "Date",
               "type": "date",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".GGTDate"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -575,13 +654,31 @@
               "linkId": "3.1.2",
               "text": "Baseline Value (units, reference range)",
               "type": "string",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".TotalBilirubinResult"
+                  }
+                }
+              ]
             },
             {
               "linkId": "3.1.3",
               "text": "Date",
               "type": "date",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".TotalBilirubinDate"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -615,13 +712,31 @@
               "linkId": "3.1.2",
               "text": "Baseline Value (units, reference range)",
               "type": "string",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".DirectBilirubinResult"
+                  }
+                }
+              ]
             },
             {
               "linkId": "3.1.3",
               "text": "Date",
               "type": "date",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".DirectBilirubinDate"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -655,13 +770,31 @@
               "linkId": "3.1.2",
               "text": "Baseline Value (units, reference range)",
               "type": "string",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".ALPResult"
+                  }
+                }
+              ]
             },
             {
               "linkId": "3.1.3",
               "text": "Date",
               "type": "date",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".ALPDate"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -695,13 +828,31 @@
               "linkId": "3.1.2",
               "text": "Baseline Value (units, reference range)",
               "type": "string",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".AlbuminResult"
+                  }
+                }
+              ]
             },
             {
               "linkId": "3.1.3",
               "text": "Date",
               "type": "date",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".AlbuminDate"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -735,13 +886,31 @@
               "linkId": "3.1.2",
               "text": "Baseline Value (units, reference range)",
               "type": "string",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".PTResult"
+                  }
+                }
+              ]
             },
             {
               "linkId": "3.1.3",
               "text": "Date",
               "type": "date",
-              "required": false
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"RemsDrugsPrepopulation\".PTDate"
+                  }
+                }
+              ]
             }
           ]
         }
@@ -759,7 +928,16 @@
           "required": false,
           "initial": {
             "value": false
-          }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/cql",
+                "expression": "\"RemsDrugsPrepopulation\".TakingMeds"
+              }
+            }
+          ]
         },
         {
           "linkId": "4.2",
@@ -771,6 +949,15 @@
               "question": "4.1",
               "operator": "=",
               "answerBoolean": false
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/cql",
+                "expression": "\"RemsDrugsPrepopulation\".Meds"
+              }
             }
           ]
         }
@@ -794,6 +981,15 @@
           "linkId": "5.2",
           "text": "Check all that apply",
           "type": "choice",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/cql",
+                "expression": "\"RemsDrugsPrepopulation\".MedicalHistory"
+              }
+            }
+          ],
           "required": true,
           "repeats": true,
           "enableWhen": [
@@ -806,103 +1002,120 @@
           "answerOption": [
             {
               "valueCoding": {
-                "code": "Hepatitis Viral Status",
+                "code": "3738000",
+                "system": "http://snomed.info/sct",
                 "display": "Hepatitis Viral Status"
               }
             },
             {
               "valueCoding": {
-                "code": "Hepatic Cysts",
+                "code": "85057007",
+                "system": "http://snomed.info/sct",
                 "display": "Hepatic Cyst"
               }
             },
             {
               "valueCoding": {
-                "code": "Ischemic Hepatitis",
+                "code": "235877000",
+                "system": "http://snomed.info/sct",
                 "display": "Ischemic Hepatitis"
               }
             },
             {
               "valueCoding": {
-                "code": "Alcohol Abuse",
+                "code": "15167005",
+                "system": "http://snomed.info/sct",
                 "display": "Alcohol Abuse"
               }
             },
             {
               "valueCoding": {
-                "code": "Family History of Liver Disease",
+                "code": "266902008",
+                "system": "http://snomed.info/sct",
                 "display": "Family History of Liver Disease"
               }
             },
             {
               "valueCoding": {
-                "code": "Autoimmune Hepatitis",
+                "code": "408335007",
+                "system": "http://snomed.info/sct",
                 "display": "Autoimmune Hepatitis"
               }
             },
             {
               "valueCoding": {
-                "code": "Wilson’s Disease",
+                "code": "88518009",
+                "system": "http://snomed.info/sct",
                 "display": "Wilson’s Disease"
               }
             },
             {
               "valueCoding": {
-                "code": "Drug Abuse",
+                "code": "26416006",
+                "system": "http://snomed.info/sct",
                 "display": "Drug Abuse"
               }
             },
             {
               "valueCoding": {
-                "code": "Gilbert’s syndrome",
+                "code": "27503000",
+                "system": "http://snomed.info/sct",
                 "display": "Gilbert’s syndrome"
               }
             },
             {
               "valueCoding": {
-                "code": "Hypolipoproteinemia",
+                "code": "363140000",
+                "system": "http://snomed.info/sct",
                 "display": "Hypolipoproteinemia"
               }
             },
             {
               "valueCoding": {
-                "code": "Familial Hyperbilirubinemia",
+                "code": "14783006",
+                "system": "http://snomed.info/sct",
                 "display": "Familial Hyperbilirubinemia"
               }
             },
             {
               "valueCoding": {
-                "code": "Anorexia",
+                "code": "56882008",
+                "system": "http://snomed.info/sct",
                 "display": "Anorexia"
               }
             },
             {
               "valueCoding": {
-                "code": "Biliary Tract Disorder",
+                "code": "105997008",
+                "system": "http://snomed.info/sct",
                 "display": "Biliary Tract Disorder"
               }
             },
             {
               "valueCoding": {
-                "code": "Hypertriglyceridemia",
+                "code": "302870006",
+                "system": "http://snomed.info/sct",
                 "display": "Hypertriglyceridemia"
               }
             },
             {
               "valueCoding": {
-                "code": "Cirrhosis",
+                "code": "19943007",
+                "system": "http://snomed.info/sct",
                 "display": "Cirrhosis"
               }
             },
             {
               "valueCoding": {
-                "code": "Gallbladder Disease/ Gallstones/ Bile Duct Occlusion",
+                "code": "39621005",
+                "system": "http://snomed.info/sct",
                 "display": "Gallbladder Disease/ Gallstones/ Bile Duct Occlusion"
               }
             },
             {
               "valueCoding": {
-                "code": "Diabetes",
+                "code": "73211009",
+                "system": "http://snomed.info/sct",
                 "display": "Diabetes"
               }
             }
