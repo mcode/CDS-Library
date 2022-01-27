@@ -1,10 +1,10 @@
 {
     "resourceType": "Library",
-    "id": "RemsDrugs-prepopulation",
-    "url": "http://hl7.org/fhir/us/davinci-dtr/Library/RemsDrugs-prepopulation",
-    "name": "RemsDrugs-prepopulation",
+    "id": "DrugHasREMS-prepopulation",
+    "url": "http://hl7.org/fhir/us/davinci-dtr/Library/DrugHasREMS-prepopulation",
+    "name": "DrugHasREMS-prepopulation",
     "version": "0.1.0",
-    "title": "RemsDrugs Prepopulation",
+    "title": "DrugHasREMS Prepopulation",
     "status": "draft",
     "type": {
         "coding": [
@@ -89,7 +89,7 @@
     "content": [
         {
             "contentType": "application/elm+json",
-            "url": "files/RemsDrugs/r4/RemsDrugsPrepopulation-0.1.0.cql"
+            "url": "files/DrugHasREMS/r4/DrugHasREMSPrepopulation-0.1.0.cql"
         }
     ]
 }
