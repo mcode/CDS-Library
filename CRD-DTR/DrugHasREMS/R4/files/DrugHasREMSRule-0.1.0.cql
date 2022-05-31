@@ -29,8 +29,11 @@ define RESULT_QuestionnaireDispenseUri:
 define RESULT_QuestionnaireProgressNoteUri:
     'Questionnaire/TuralioRemsPatientStatus'
 
-define RESULT_QuestionairePrescriberEnrollmentUri:
-    'Questionaire/TuralioPrescriberEnrollmentForm'
+define RESULT_QuestionnairePrescriberEnrollmentUri:
+    'Questionnaire/TuralioPrescriberEnrollmentForm'
+
+define RESULT_QuestionnairePrescriberKnowledgeAssessmentUri:
+    'Questionnaire/TuralioPrescriberKnowledgeAssessment'
 
 define RESULT_requestId:
   medication_request
