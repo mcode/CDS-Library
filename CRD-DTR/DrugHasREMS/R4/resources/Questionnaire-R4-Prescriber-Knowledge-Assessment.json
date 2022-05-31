@@ -1,6 +1,7 @@
 {
     "resourceType": "Questionnaire",
     "id": "TuralioPrescriberKnowledgeAssessment",
+    "name": "TuralioPrescriberKnowledgeAssessment",
     "title": "Turalio REMS Prescriber Knowledge Assessment",
     "status": "draft",
     "subjectType": [
