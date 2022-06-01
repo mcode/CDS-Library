@@ -105,66 +105,54 @@
                 },
                 {
                     "linkId": "1.7",
-                    "text": "State License #",
+                    "text": "Practice/Facility Name",
                     "type": "string",
-                    "required": true
+                    "required": false
                 },
                 {
                     "linkId": "1.8",
-                    "text": "Practice/Facility Name",
-                    "type": "string",
-                    "required": false
-                },
-                {
-                    "linkId": "1.9",
-                    "text": "Practice/Facility Name",
-                    "type": "string",
-                    "required": false
-                },
-                {
-                    "linkId": "1.10",
                     "text": "Street Address",
                     "type": "string",
                     "required": true
                 },
                 {
-                    "linkId": "1.11",
+                    "linkId": "1.9",
                     "text": "City",
                     "type": "string",
                     "required": true
                 },
                 {
-                    "linkId": "1.12",
+                    "linkId": "1.10",
                     "text": "State",
                     "type": "string",
                     "required": true
                 },
                 {
-                    "linkId": "1.13",
+                    "linkId": "1.11",
                     "text": "ZIP Code",
                     "type": "string",
                     "required": true
                 },
                 {
-                    "linkId": "1.14",
+                    "linkId": "1.12",
                     "text": "Office Phone Number",
                     "type": "string",
                     "required": true
                 },
                 {
-                    "linkId": "1.15",
+                    "linkId": "1.13",
                     "text": "Office Fax Number",
                     "type": "string",
                     "required": true
                 },
                 {
-                    "linkId": "1.16",
+                    "linkId": "1.14",
                     "text": "E-Mail",
                     "type": "string",
                     "required": true
                 },
                 {
-                    "linkId": "1.17",
+                    "linkId": "1.15",
                     "text": "Perfered Method of Communication",
                     "type": "open-choice",
                     "required": false,
@@ -190,7 +178,7 @@
                     ]
                 },
                 {
-                    "linkId": "1.18",
+                    "linkId": "1.16",
                     "text": "Perferred Time of Contact",
                     "type": "open-choice",
                     "required": false,

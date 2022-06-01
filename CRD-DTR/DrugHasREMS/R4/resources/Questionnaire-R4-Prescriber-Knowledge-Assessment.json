@@ -122,7 +122,7 @@
                         {
                           "valueCoding": {
                             "code": "true",
-                            "display": "Tue"
+                            "display": "True"
                           }
                         },
                         {
@@ -141,7 +141,7 @@
                         {
                           "valueCoding": {
                             "code": "true",
-                            "display": "Tue"
+                            "display": "True"
                           }
                         },
                         {
@@ -160,7 +160,7 @@
                         {
                           "valueCoding": {
                             "code": "true",
-                            "display": "Tue"
+                            "display": "True"
                           }
                         },
                         {
@@ -241,7 +241,7 @@
                         {
                           "valueCoding": {
                             "code": "true",
-                            "display": "Tue"
+                            "display": "True"
                           }
                         },
                         {
@@ -260,7 +260,7 @@
                         {
                           "valueCoding": {
                             "code": "true",
-                            "display": "Tue"
+                            "display": "True"
                           }
                         },
                         {
@@ -279,7 +279,7 @@
                         {
                           "valueCoding": {
                             "code": "true",
-                            "display": "Tue"
+                            "display": "True"
                           }
                         },
                         {
@@ -292,7 +292,7 @@
                 },
                 {
                     "linkId": "2.9",
-                    "text": "9. I must complete a Patient Status Form for each patient taking TURALIO and submit it to the TURALIO RE-MS:",
+                    "text": "9. I must complete a Patient Status Form for each patient taking TURALIO and submit it to the TURALIO REMS:",
                     "type": "open-choice",
                     "answerOption": [
                         {
