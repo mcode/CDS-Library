@@ -1,11 +1,11 @@
 arguments=
 auto.sync=false
 build.scans.enabled=false
-connection.gradle.distribution=GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(/Users/zrobin/.sdkman/candidates/gradle/current))
+connection.gradle.distribution=GRADLE_DISTRIBUTION(VERSION(6.3))
 connection.project.dir=
 eclipse.preferences.version=1
 gradle.user.home=
-java.home=/Users/zrobin/.sdkman/candidates/java/11.0.2-open
+java.home=/Library/Java/JavaVirtualMachines/adoptopenjdk-11-openj9.jdk/Contents/Home
 jvm.arguments=
 offline.mode=false
 override.workspace.settings=true
