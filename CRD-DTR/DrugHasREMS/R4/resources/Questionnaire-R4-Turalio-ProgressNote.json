@@ -11,10 +11,6 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
-      "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/RemsDrugs-prepopulation"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
       "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/BasicClinicalInfo-prepopulation"
     }
   ],
@@ -62,15 +58,6 @@
     {
       "linkId": "4",
       "text": "Current Other Diagnoses",
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-          "valueExpression": {
-            "language": "text/cql",
-            "expression": "\"RemsDrugsPrepopulation\".CurrentDiagnoses"
-          }
-        }
-      ],
       "type": "open-choice",
       "repeats": true,
       "required": true,
@@ -87,31 +74,13 @@
           "text": "Transplants for Order",
           "type": "open-choice",
           "repeats": true,
-          "answerOption": [],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/cql",
-                "expression": "\"RemsDrugsPrepopulation\".QualifyingTransplantCodings"
-              }
-            }
-          ]
+          "answerOption": []
         },
         {
           "linkId": "5.2",
           "text": "Date of transplant",
           "type": "date",
-          "required": true,
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/cql",
-                "expression": "\"RemsDrugsPrepopulation\".TransplantDate"
-              }
-            }
-          ]
+          "required": true
         },
         {
           "linkId": "5.3",
@@ -254,72 +223,27 @@
         {
           "linkId": "9.1",
           "type": "text",
-          "text": "RxNorm Code",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/cql",
-                "expression": "\"RemsDrugsPrepopulation\".MedicationCode"
-              }
-            }
-          ]
+          "text": "RxNorm Code"
         },
         {
           "linkId": "9.2",
           "type": "text",
-          "text": "Drug",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/cql",
-                "expression": "\"RemsDrugsPrepopulation\".MedicationName"
-              }
-            }
-          ]
+          "text": "Drug"
         },
         {
           "linkId": "9.3",
           "type": "text",
-          "text": "Route",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/cql",
-                "expression": "\"RemsDrugsPrepopulation\".MedicationRoute"
-              }
-            }
-          ]
+          "text": "Route"
         },
         {
           "linkId": "9.4",
           "type": "text",
-          "text": "Dose",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/cql",
-                "expression": "\"RemsDrugsPrepopulation\".MedicationDoseWithUnit"
-              }
-            }
-          ]
+          "text": "Dose"
         },
         {
           "linkId": "9.5",
           "type": "text",
-          "text": "Frequency",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/cql",
-                "expression": "\"RemsDrugsPrepopulation\".MedicationFrequency"
-              }
-            }
-          ]
+          "text": "Frequency"
         }
       ]
     },

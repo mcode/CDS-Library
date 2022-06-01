@@ -9,6 +9,12 @@
     ],
     "date": "2022-05-28",
     "publisher": "FDA-REMS",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+        "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/BasicPractitionerInfo-prepopulation"
+      }
+    ],
     "item": [
         {
             "linkId": "1",
@@ -19,25 +25,69 @@
                     "linkId": "1.1",
                     "text": "First Name",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                        "valueExpression": {
+                          "language": "text/cql",
+                          "expression": "\"BasicClinicalInfoPrepopulation\".EncounterProviderFirstName"
+                        }
+                      },
+                      {
+                        "url" : "http://hl7.org/fhir/StructureDefinition/minLength",
+                        "valueInteger": 2
+                      }
+                    ]
                 },
                 {
                     "linkId": "1.2",
                     "text": "Last Name",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                        "valueExpression": {
+                          "language": "text/cql",
+                          "expression": "\"BasicClinicalInfoPrepopulation\".EncounterProviderLastName"
+                        }
+                      },
+                      {
+                        "url" : "http://hl7.org/fhir/StructureDefinition/minLength",
+                        "valueInteger": 2
+                      }
+                    ]
                 },
                 {
                     "linkId": "1.3",
                     "text": "Middle Initial",
                     "type": "string",
-                    "required": false
+                    "required": false,
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                        "valueExpression": {
+                          "language": "text/cql",
+                          "expression": "\"BasicClinicalInfoPrepopulation\".EncounterProviderMiddleInitial"
+                        }
+                      }
+                    ]
                 },
                 {
                     "linkId": "1.4",
                     "text": "National Provider Identifier (NPI) #",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                        "valueExpression": {
+                          "language": "text/cql",
+                          "expression": "\"BasicClinicalInfoPrepopulation\".EncounterProviderNPI"
+                        }
+                      }
+                    ]
                 },
                 {
                     "linkId": "1.5",
