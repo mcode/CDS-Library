@@ -52,3 +52,6 @@ define Phone: (singleton from (
 
 define Email: (singleton from (
   "OrderingProvider".telecom telecom where telecom.system.value = 'email')).value.value
+
+define Fax: (singleton from (
+  "OrderingProvider".telecom telecom where telecom.system.value = 'fax')).value.value
