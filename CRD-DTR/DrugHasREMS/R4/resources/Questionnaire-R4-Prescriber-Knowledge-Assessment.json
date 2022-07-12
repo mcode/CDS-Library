@@ -31,7 +31,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/cql",
-                          "expression": "\"BasicClinicalInfoPrepopulation\".EncounterProviderFirstName"
+                          "expression": "\"BasicPractitionerInfoPrepopulation\".FirstName"
                         }
                       },
                       {
@@ -50,7 +50,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/cql",
-                          "expression": "\"BasicClinicalInfoPrepopulation\".EncounterProviderLastName"
+                          "expression": "\"BasicPractitionerInfoPrepopulation\".LastName"
                         }
                       },
                       {
@@ -69,7 +69,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/cql",
-                          "expression": "\"BasicClinicalInfoPrepopulation\".EncounterProviderMiddleInitial"
+                          "expression": "\"BasicPractitionerInfoPrepopulation\".MiddleInitial"
                         }
                       }
                     ]
@@ -84,7 +84,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/cql",
-                          "expression": "\"BasicClinicalInfoPrepopulation\".EncounterProviderNPI"
+                          "expression": "\"BasicPractitionerInfoPrepopulation\".NPI"
                         }
                       }
                     ]
@@ -93,19 +93,46 @@
                     "linkId": "1.5",
                     "text": "Phone Number",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                        "valueExpression": {
+                          "language": "text/cql",
+                          "expression": "\"BasicPractitionerInfoPrepopulation\".Phone"
+                        }
+                      }
+                    ]
                 },
                 {
                     "linkId": "1.6",
                     "text": "Fax Number",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                        "valueExpression": {
+                          "language": "text/cql",
+                          "expression": "\"BasicPractitionerInfoPrepopulation\".Fax"
+                        }
+                      }
+                    ]
                 },
                 {
                     "linkId": "1.7",
                     "text": "Email",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                        "valueExpression": {
+                          "language": "text/cql",
+                          "expression": "\"BasicPractitionerInfoPrepopulation\".Email"
+                        }
+                      }
+                    ]
                 }
             ]
         },
@@ -117,7 +144,7 @@
                 {
                     "linkId": "2.1",
                     "text": "1. TURALIO is indicated for the treatment of adult patients with symptomatic tenosynovial giant cell tumor (TGCT) associated with severe morbidity or functional limitations and not amenable to improvement with surgery.",
-                    "type": "open-choice",
+                    "type": "choice",
                     "answerOption": [
                         {
                           "valueCoding": {
@@ -136,7 +163,7 @@
                 {
                     "linkId": "2.2",
                     "text": "2. TURALIO is contraindicated in patients with hepatic impairment.",
-                    "type": "open-choice",
+                    "type": "choice",
                     "answerOption": [
                         {
                           "valueCoding": {
@@ -155,7 +182,7 @@
                 {
                     "linkId": "2.3",
                     "text": "3. To prescribe TURALIO, I must enroll each patient in the TURALIO REMS by completing a Patient Enrollment Form with the patient and submitting it to the TURALIO REMS.",
-                    "type": "open-choice",
+                    "type": "choice",
                     "answerOption": [
                         {
                           "valueCoding": {
@@ -174,7 +201,7 @@
                 {
                     "linkId": "2.4",
                     "text": "4. Before treating each patient with TURALIO, I must",
-                    "type": "open-choice",
+                    "type": "choice",
                     "answerOption": [
                         {
                           "valueCoding": {
@@ -205,7 +232,7 @@
                 {
                     "linkId": "2.5",
                     "text": "5. One of the primary counseling messages I must tell my patients before prescribing TURALIO is",
-                    "type": "open-choice",
+                    "type": "choice",
                     "answerOption": [
                         {
                           "valueCoding": {
@@ -236,7 +263,7 @@
                 {
                     "linkId": "2.6",
                     "text": "6. I am required to educate my patients on the signs and symptoms of liver injury and the need to notify me should they experience them.",
-                    "type": "open-choice",
+                    "type": "choice",
                     "answerOption": [
                         {
                           "valueCoding": {
@@ -255,7 +282,7 @@
                 {
                     "linkId": "2.7",
                     "text": "7. If any dose modifications are required, they must be done in increments of 200 mg.",
-                    "type": "open-choice",
+                    "type": "choice",
                     "answerOption": [
                         {
                           "valueCoding": {
@@ -274,7 +301,7 @@
                 {
                     "linkId": "2.8",
                     "text": "8. After treatment initiation, I need to monitor liver tests weekly for the first 8 weeks of treatment, every 2 weeks for the next month, and every 3 months thereafter.",
-                    "type": "open-choice",
+                    "type": "choice",
                     "answerOption": [
                         {
                           "valueCoding": {
@@ -293,7 +320,7 @@
                 {
                     "linkId": "2.9",
                     "text": "9. I must complete a Patient Status Form for each patient taking TURALIO and submit it to the TURALIO REMS:",
-                    "type": "open-choice",
+                    "type": "choice",
                     "answerOption": [
                         {
                           "valueCoding": {
