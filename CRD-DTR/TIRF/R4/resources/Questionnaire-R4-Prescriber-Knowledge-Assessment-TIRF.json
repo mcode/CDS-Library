@@ -1,0 +1,36 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "TIRFPrescriberKnowledgeAssessment",
+    "name": "TIRFPrescriberKnowledgeAssessment",
+    "title": "TIRF REMS Prescriber Knowledge Assessment",
+    "status": "draft",
+    "subjectType": [
+        "Prescriber"
+    ],
+    "date": "2022-05-28",
+    "publisher": "FDA-REMS",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+        "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/BasicPractitionerInfo-prepopulation"
+      }
+    ],
+    "item": [
+      {
+        "linkId": "1",
+        "type": "group",
+        "text": "Patient Attestation",
+        "item": [
+
+        ]
+      },
+      {
+        "linkId": "2",
+        "type": "group",
+        "text": "Patient Attestation",
+        "item": [
+
+        ]
+      }
+    ]
+}

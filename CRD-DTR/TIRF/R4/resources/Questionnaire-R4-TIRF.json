@@ -1,0 +1,517 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "TIRFRemsPatientEnrollment",
+    "name": "TIRFRemsPatientEnrollment",
+    "title": "TIRF Rems Patient Enrollment",
+    "status": "draft",
+    "subjectType": [
+      "Patient"
+    ],
+    "date": "2020-05-20",
+    "publisher": "Da Vinci DTR",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+        "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/DrugHasREMS-prepopulation"
+      }
+    ],
+    "item": [
+      {
+        "linkId": "1",
+        "type": "group",
+        "text": "Patient Information",
+        "item": [
+          {
+            "linkId": "1.1",
+            "extension": [
+            ],
+            "type": "display"
+          },
+          {
+            "linkId": "1.2",
+            "text": "First Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.3",
+            "text": "Middle Initial",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.4",
+            "text": "Last Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.5",
+            "text": "Data of Birth",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.6",
+            "text": "Sex",
+            "type": "open-choice",
+            "required": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "male",
+                  "display": "Male"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "female",
+                  "display": "Female"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "other",
+                  "display": "Other"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "1.7",
+            "text": "Race",
+            "type": "open-choice",
+            "required": false,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "White",
+                  "display": "White"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "Asian",
+                  "display": "Asian"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "Black or African American",
+                  "display": "Black or African American"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "American Indian or Alaskan Native",
+                  "display": "American Indian or Alaskan Native"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "Native Hawaiian or Other Pacific Islander",
+                  "display": "Native Hawaiian or Other Pacific Islander"
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "Other Race",
+                  "display": "Other (please specifiy):"
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "1.8",
+            "text": "Ethnicity",
+            "type": "group",
+            "required": true,
+            "item": [
+              {
+                "linkId": "1.8.1",
+                "text": "Are you Hispanic or Latino?",
+                "type": "open-choice",
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "code": "Hispanic or Latino",
+                      "display": "Yes"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "Not Hispanic or Latino",
+                      "display": "No"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "1.9",
+            "text": "Address",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.10",
+            "text": "City",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.11",
+            "text": "State",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.12",
+            "text": "Zip",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.13",
+            "text": "Phone",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.14",
+            "text": "Email Address",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "1.15",
+            "text": "Preferred Time of Contact",
+            "type": "string",
+            "required": true,
+            "answerOption": [
+              {
+                "valueCoding": {
+                  "code": "",
+                  "display": ""
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "",
+                  "display": ""
+                }
+              },
+              {
+                "valueCoding": {
+                  "code": "",
+                  "display": ""
+                }
+              }
+            ]
+          },
+          {
+            "linkId": "1.16",
+            "text": "Preferred Method of Contact",
+            "type": "string",
+            "required": true,
+            "answerOption": [
+              
+            ]
+          },
+          {
+            "linkId": "1.17",
+            "text": "Is there a child in the home or are you a caregiver of small children?",
+            "type": "string",
+            "required": true,
+            "answerOption": [
+              
+            ]
+          },
+          {
+            "linkId": "1.18",
+            "text": "Do you have a safe and secure place to store your medicine?",
+            "type": "string",
+            "required": true,
+            "answerOption": [
+              
+            ]
+          }
+        ]
+      },
+      {
+        "linkId": "2",
+        "type": "group",
+        "text": "Patient Representative (if required)",
+        "item": [
+          {
+            "linkId": "2.1",
+            "extension": [
+            ],
+            "type": "display"
+          }, 
+          {
+            "linkId": "2.2",
+            "text": "First Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "2.3",
+            "text": "Last Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "2.4",
+            "text": "Relationship to Patient",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "2.5",
+            "text": "Phone",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "2.6",
+            "text": "Email Address",
+            "type": "string",
+            "required": true
+          }
+        ]
+      },
+      {
+        "linkId": "3",
+        "type": "group",
+        "text": "Patient Attestation",
+        "item": [
+          {
+            "linkId": "3.1",
+            "text": "TIRF Medicines can cause your breathing to stop - which can lead to death.\nSafety Rules for TIRF Medicines\nYou have agreed to take a TIRF Medicine and to follow all the safety rules to make it less likely you or others will experience serious harm.\n• My healthcare provider has talked to me about the safe use of TIRF medicines using the Medication Guide and Patient Counseling Guide.\n• I will only use this medicine if I am regularly using another opioid, around-the-clock, for constant pain.\n• If I stop taking my around-the-clock-opioid pain medicine, I MUST stop taking my TIRF medicine.\n• I will never share or give my TIRF medicine to anyone else, even if they have the same symptoms.\n     • My TIRF medicine could cause harm to others or even death. A dose that is okay for me could cause an overdose and death for someone else.\n• I will store my TIRF medicine in a safe and secure place away from children. I understand that accidental use by a child, or anyone for whom the medicine was not prescribed, can cause death.\n• I have been told how to properly dispose of my partially used or unneeded TIRF medicine remaining from my prescription. I will dispose of my TIRF medicine properly as soon as I no longer need it.\n• I will contact my healthcare provider if my TIRF medicine does not relieve my pain. I will not change the dose of my TIRF medicine myself or take it more often than my healthcare provider has directed.\n• I must enroll in the TIRF REMS and Patient Registry by completing the Patient Enrollment Form with my healthcare provider.\n• I understand that the TIRF REMS and its agents may use and share my personal information to manage the program, and that information about patients who get TIRF medicines will be stored in a private and secure database. My health information may be shared with the U.S. Food and Drug Administration (FDA) to evaluate the TIRF REMS. However, my name will not be shared.\n• I give permission for the TIRF REMS and its agents or vendors to contact me by phone, mail, or email to support the administration of the TIRF REMS Program.\n• I will tell my healthcare provider if I, or anyone else, experience an adverse event of accidental exposure, abuse, misuse, addiction, and overdose.\n• I will re-enroll in the TIRF REMS by completing the Patient Enrollment Form with my healthcare provider every two years during treatment.",
+            "type": "display",
+            "readOnly": true
+          },
+          {
+            "linkId": "3.2",
+            "text": "Patient or Patient Representative Signature",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "3.3",
+            "text": "Date",
+            "type": "string",
+            "required": true
+          }
+        ]
+      },
+      {
+        "linkId": "4",
+        "type": "group",
+        "text": "Prescriber Information",
+        "item": [
+          {
+            "linkId": "4.1",
+            "extension": [
+            ],
+            "type": "display"
+          },
+          {
+            "linkId": "4.2",
+            "text": "First Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "4.3",
+            "text": "Last Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "4.4",
+            "text": "Address",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "4.5",
+            "text": "City",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "4.6",
+            "text": "State",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "4.7",
+            "text": "Zip",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "4.8",
+            "text": "Phone",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "4.9",
+            "text": "Fax",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "4.10",
+            "text": "Individual NPI #",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "4.11",
+            "text": "Email Address",
+            "type": "string",
+            "required": true
+          }
+        ]
+      },
+      {
+        "linkId": "5",
+        "type": "group",
+        "text": "Medical Information",
+        "item": [
+          {
+            "linkId": "5.1",
+            "extension": [
+            ],
+            "type": "display"
+          },
+          {
+            "linkId": "5.2",
+            "text": "Prior TIRF Use within the last 6 months",
+            "type": "string",
+            "required": true,
+            "answerOption": [
+
+            ]
+          },
+          {
+            "linkId": "5.3",
+            "text": "TIRF Product Name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "5.4",
+            "text": "Strength",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "5.5",
+            "text": "Dose",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "5.6",
+            "text": "Frequency",
+            "type": "string",
+            "required": true
+          },
+          {
+            "linkId": "5.7",
+            "text": "Type of Pain",
+            "type": "string",
+            "required": true,
+            "answerOption": [
+
+            ]
+          }
+        ]
+      },
+      {
+        "linkId": "6",
+        "type": "group",
+        "text": "Verify Opioid Tolerance",
+        "item": [
+          {
+            "linkId": "3.1",
+            "type": "group",
+            "item": [
+              {
+                "linkId": "3.1.1",
+                "text": "Moiety",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "3.1.2",
+                "text": "Formulation",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "3.1.3",
+                "text": "Strength",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "3.1.4",
+                "text": "Route",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "3.1.5",
+                "text": "Dose",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "3.1.6",
+                "text": "Frequency",
+                "type": "string",
+                "required": true
+              }
+            ]
+          },
+          {
+            "linkId": "3.1",
+            "type": "group",
+            "item": [
+
+            ]
+          },
+          {
+            "linkId": "3.1",
+            "type": "group",
+            "item": [
+
+            ]
+          },
+          {
+            "linkId": "3.1",
+            "type": "group",
+            "item": [
+
+            ]
+          }
+        ]
+      },
+      {
+        "linkId": "7",
+        "type": "group",
+        "text": "Concomitant Medications",
+        "item": [
+
+        ]
+      }      
+    ]
+}

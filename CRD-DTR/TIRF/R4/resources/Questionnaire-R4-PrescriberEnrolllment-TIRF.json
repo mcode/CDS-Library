@@ -1,0 +1,44 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "TIRFPrescriberEnrollmentForm",
+    "name": "TIRFPrescriberEnrollmentForm",
+    "title": "TIRF REMS Prescriber Enrollment Form",
+    "status": "draft",
+    "subjectType": [
+        "Practitioner"
+    ],
+    "date": "2022-05-28",
+    "publisher": "FDA-REMS",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+        "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/DrugHasREMSPrescriberEnrollment-prepopulation"
+      }
+    ],
+    "item": [
+      {
+        "linkId": "1",
+        "type": "group",
+        "text": "Patient Attestation",
+        "item": [
+
+        ]
+      },
+      {
+        "linkId": "2",
+        "type": "group",
+        "text": "Patient Attestation",
+        "item": [
+
+        ]
+      },
+      {
+        "linkId": "3",
+        "type": "group",
+        "text": "Patient Attestation",
+        "item": [
+
+        ]
+      }
+    ]
+}
