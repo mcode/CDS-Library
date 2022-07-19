@@ -9,6 +9,12 @@
     ],
     "date": "2020-05-20",
     "publisher": "Da Vinci DTR",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+        "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/BasicPractitionerInfo-prepopulation"
+      }
+    ],
     "item": [
       {
         "linkId": "1",
@@ -18,64 +24,23 @@
           {
             "linkId": "1.1",
             "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/sub-questionnaire",
+                "valueCanonical": "questionnaire/patient-info-base"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/sub-questionnaire-expand",
+                "valueBoolean": true
+              }
             ],
             "type": "display"
           },
           {
             "linkId": "1.2",
-            "text": "First Name",
-            "type": "string",
-            "required": true
-          },
-          {
-            "linkId": "1.3",
-            "text": "Middle Initial",
-            "type": "string",
-            "required": true
-          },
-          {
-            "linkId": "1.4",
-            "text": "Last Name",
-            "type": "string",
-            "required": true
-          },
-          {
-            "linkId": "1.5",
-            "text": "Data of Birth",
-            "type": "string",
-            "required": true
-          },
-          {
-            "linkId": "1.6",
-            "text": "Sex",
-            "type": "open-choice",
-            "required": false,
-            "answerOption": [
-              {
-                "valueCoding": {
-                  "code": "male",
-                  "display": "Male"
-                }
-              },
-              {
-                "valueCoding": {
-                  "code": "female",
-                  "display": "Female"
-                }
-              },
-              {
-                "valueCoding": {
-                  "code": "other",
-                  "display": "Other"
-                }
-              }
-            ]
-          },
-          {
-            "linkId": "1.7",
             "text": "Race",
             "type": "open-choice",
             "required": false,
+            "repeats": true,
             "answerOption": [
               {
                 "valueCoding": {
@@ -106,25 +71,19 @@
                   "code": "Native Hawaiian or Other Pacific Islander",
                   "display": "Native Hawaiian or Other Pacific Islander"
                 }
-              },
-              {
-                "valueCoding": {
-                  "code": "Other Race",
-                  "display": "Other (please specifiy):"
-                }
               }
             ]
           },
           {
-            "linkId": "1.8",
+            "linkId": "1.3",
             "text": "Ethnicity",
             "type": "group",
             "required": true,
             "item": [
               {
-                "linkId": "1.8.1",
+                "linkId": "1.3.1",
                 "text": "Are you Hispanic or Latino?",
-                "type": "open-choice",
+                "type": "choice",
                 "answerOption": [
                   {
                     "valueCoding": {
@@ -143,92 +102,104 @@
             ]
           },
           {
-            "linkId": "1.9",
+            "linkId": "1.4",
             "text": "Address",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "1.10",
+            "linkId": "1.5",
             "text": "City",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "1.11",
+            "linkId": "1.6",
             "text": "State",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "1.12",
+            "linkId": "1.7",
             "text": "Zip",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "1.13",
+            "linkId": "1.8",
             "text": "Phone",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "1.14",
+            "linkId": "1.9",
             "text": "Email Address",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "1.15",
+            "linkId": "1.10",
             "text": "Preferred Time of Contact",
-            "type": "string",
+            "type": "choice",
             "required": true,
             "answerOption": [
               {
-                "valueCoding": {
-                  "code": "",
-                  "display": ""
-                }
+                "valueString": "Morning"
               },
               {
-                "valueCoding": {
-                  "code": "",
-                  "display": ""
-                }
+                "valueString": "Afternoon"
               },
               {
-                "valueCoding": {
-                  "code": "",
-                  "display": ""
-                }
+                "valueString": "Evening"
               }
             ]
           },
           {
-            "linkId": "1.16",
+            "linkId": "1.11",
             "text": "Preferred Method of Contact",
-            "type": "string",
+            "type": "choice",
             "required": true,
             "answerOption": [
-              
+              {
+                "valueString": "Text to Mobile #"
+              },
+              {
+                "valueString": "Email"
+              },
+              {
+                "valueString": "Phone Call"
+              },
+              {
+                "valueString": "Postal Mail"
+              }
             ]
           },
           {
-            "linkId": "1.17",
+            "linkId": "1.12",
             "text": "Is there a child in the home or are you a caregiver of small children?",
-            "type": "string",
+            "type": "choice",
             "required": true,
             "answerOption": [
-              
+              {
+                "valueString": "Yes"
+              },
+              {
+                "valueString": "No"
+              }
             ]
           },
           {
-            "linkId": "1.18",
+            "linkId": "1.13",
             "text": "Do you have a safe and secure place to store your medicine?",
-            "type": "string",
+            "type": "choice",
             "required": true,
             "answerOption": [
-              
+              {
+                "valueString": "Yes"
+              },
+              {
+                "valueString": "No"
+              }
             ]
           }
         ]
@@ -240,36 +211,30 @@
         "item": [
           {
             "linkId": "2.1",
-            "extension": [
-            ],
-            "type": "display"
-          }, 
-          {
-            "linkId": "2.2",
             "text": "First Name",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "2.3",
+            "linkId": "2.2",
             "text": "Last Name",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "2.4",
+            "linkId": "2.3",
             "text": "Relationship to Patient",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "2.5",
+            "linkId": "2.4",
             "text": "Phone",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "2.6",
+            "linkId": "2.5",
             "text": "Email Address",
             "type": "string",
             "required": true
@@ -283,21 +248,19 @@
         "item": [
           {
             "linkId": "3.1",
-            "text": "TIRF Medicines can cause your breathing to stop - which can lead to death.\nSafety Rules for TIRF Medicines\nYou have agreed to take a TIRF Medicine and to follow all the safety rules to make it less likely you or others will experience serious harm.\n• My healthcare provider has talked to me about the safe use of TIRF medicines using the Medication Guide and Patient Counseling Guide.\n• I will only use this medicine if I am regularly using another opioid, around-the-clock, for constant pain.\n• If I stop taking my around-the-clock-opioid pain medicine, I MUST stop taking my TIRF medicine.\n• I will never share or give my TIRF medicine to anyone else, even if they have the same symptoms.\n     • My TIRF medicine could cause harm to others or even death. A dose that is okay for me could cause an overdose and death for someone else.\n• I will store my TIRF medicine in a safe and secure place away from children. I understand that accidental use by a child, or anyone for whom the medicine was not prescribed, can cause death.\n• I have been told how to properly dispose of my partially used or unneeded TIRF medicine remaining from my prescription. I will dispose of my TIRF medicine properly as soon as I no longer need it.\n• I will contact my healthcare provider if my TIRF medicine does not relieve my pain. I will not change the dose of my TIRF medicine myself or take it more often than my healthcare provider has directed.\n• I must enroll in the TIRF REMS and Patient Registry by completing the Patient Enrollment Form with my healthcare provider.\n• I understand that the TIRF REMS and its agents may use and share my personal information to manage the program, and that information about patients who get TIRF medicines will be stored in a private and secure database. My health information may be shared with the U.S. Food and Drug Administration (FDA) to evaluate the TIRF REMS. However, my name will not be shared.\n• I give permission for the TIRF REMS and its agents or vendors to contact me by phone, mail, or email to support the administration of the TIRF REMS Program.\n• I will tell my healthcare provider if I, or anyone else, experience an adverse event of accidental exposure, abuse, misuse, addiction, and overdose.\n• I will re-enroll in the TIRF REMS by completing the Patient Enrollment Form with my healthcare provider every two years during treatment.",
+            "text": "TIRF Medicines can cause your breathing to stop - which can lead to death. Safety Rules for TIRF Medicines You have agreed to take a TIRF Medicine and to follow all the safety rules to make it less likely you or others will experience serious harm • My healthcare provider has talked to me about the safe use of TIRF medicines using the Medication Guide and Patient Counseling Guide • I will only use this medicine if I am regularly using another opioid, around-the-clock, for constant pain • If I stop taking my around-the-clock-opioid pain medicine, I MUST stop taking my TIRF medicine • I will never share or give my TIRF medicine to anyone else, even if they have the same symptoms • My TIRF medicine could cause harm to others or even death. A dose that is okay for me could cause an overdose and death for someone else • I will store my TIRF medicine in a safe and secure place away from children. I understand that accidental use by a child, or anyone for whom the medicine was not prescribed, can cause death • I have been told how to properly dispose of my partially used or unneeded TIRF medicine remaining from my prescription. I will dispose of my TIRF medicine properly as soon as I no longer need it • I will contact my healthcare provider if my TIRF medicine does not relieve my pain. I will not change the dose of my TIRF medicine myself or take it more often than my healthcare provider has directed • I must enroll in the TIRF REMS and Patient Registry by completing the Patient Enrollment Form with my healthcare provider • I understand that the TIRF REMS and its agents may use and share my personal information to manage the program, and that information about patients who get TIRF medicines will be stored in a private and secure database. My health information may be shared with the U.S. Food and Drug Administration (FDA) to evaluate the TIRF REMS. However, my name will not be shared • I give permission for the TIRF REMS and its agents or vendors to contact me by phone, mail, or email to support the administration of the TIRF REMS Program • I will tell my healthcare provider if I, or anyone else, experience an adverse event of accidental exposure, abuse, misuse, addiction, and overdose • I will re-enroll in the TIRF REMS by completing the Patient Enrollment Form with my healthcare provider every two years during treatment.",
             "type": "display",
             "readOnly": true
           },
           {
             "linkId": "3.2",
-            "text": "Patient or Patient Representative Signature",
-            "type": "string",
-            "required": true
-          },
-          {
-            "linkId": "3.3",
-            "text": "Date",
-            "type": "string",
-            "required": true
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/sub-questionnaire",
+                "valueCanonical": "questionnaire/patient-signature"
+              }
+            ],
+            "type": "display"
           }
         ]
       },
@@ -308,66 +271,60 @@
         "item": [
           {
             "linkId": "4.1",
-            "extension": [
-            ],
-            "type": "display"
-          },
-          {
-            "linkId": "4.2",
             "text": "First Name",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "4.3",
+            "linkId": "4.2",
             "text": "Last Name",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "4.4",
+            "linkId": "4.3",
             "text": "Address",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "4.5",
+            "linkId": "4.4",
             "text": "City",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "4.6",
+            "linkId": "4.5",
             "text": "State",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "4.7",
+            "linkId": "4.6",
             "text": "Zip",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "4.8",
+            "linkId": "4.7",
             "text": "Phone",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "4.9",
+            "linkId": "4.8",
             "text": "Fax",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "4.10",
+            "linkId": "4.9",
             "text": "Individual NPI #",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "4.11",
+            "linkId": "4.10",
             "text": "Email Address",
             "type": "string",
             "required": true
@@ -381,50 +338,54 @@
         "item": [
           {
             "linkId": "5.1",
-            "extension": [
-            ],
-            "type": "display"
-          },
-          {
-            "linkId": "5.2",
             "text": "Prior TIRF Use within the last 6 months",
-            "type": "string",
+            "type": "choice",
             "required": true,
             "answerOption": [
-
+              {
+                "valueString": "Yes"
+              },
+              {
+                "valueString": "No"
+              }
             ]
           },
           {
-            "linkId": "5.3",
+            "linkId": "5.2",
             "text": "TIRF Product Name",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "5.4",
+            "linkId": "5.3",
             "text": "Strength",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "5.5",
+            "linkId": "5.4",
             "text": "Dose",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "5.6",
+            "linkId": "5.5",
             "text": "Frequency",
             "type": "string",
             "required": true
           },
           {
-            "linkId": "5.7",
+            "linkId": "5.6",
             "text": "Type of Pain",
-            "type": "string",
+            "type": "choice",
             "required": true,
             "answerOption": [
-
+              {
+                "valueString": "Cancer"
+              },
+              {
+                "valueString": "Non-cancer Pain"
+              }
             ]
           }
         ]
@@ -435,41 +396,54 @@
         "text": "Verify Opioid Tolerance",
         "item": [
           {
-            "linkId": "3.1",
+            "linkId": "6.1",
             "type": "group",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "gtable"
+                    }
+                  ]
+                }
+              }
+            ],
             "item": [
               {
-                "linkId": "3.1.1",
+                "linkId": "6.1.1",
                 "text": "Moiety",
                 "type": "string",
                 "required": true
               },
               {
-                "linkId": "3.1.2",
+                "linkId": "6.1.2",
                 "text": "Formulation",
                 "type": "string",
                 "required": true
               },
               {
-                "linkId": "3.1.3",
+                "linkId": "6.1.3",
                 "text": "Strength",
                 "type": "string",
                 "required": true
               },
               {
-                "linkId": "3.1.4",
+                "linkId": "6.1.4",
                 "text": "Route",
                 "type": "string",
                 "required": true
               },
               {
-                "linkId": "3.1.5",
+                "linkId": "6.1.5",
                 "text": "Dose",
                 "type": "string",
                 "required": true
               },
               {
-                "linkId": "3.1.6",
+                "linkId": "6.1.6",
                 "text": "Frequency",
                 "type": "string",
                 "required": true
@@ -477,24 +451,143 @@
             ]
           },
           {
-            "linkId": "3.1",
+            "linkId": "6.1",
             "type": "group",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "gtable"
+                    }
+                  ]
+                }
+              }
+            ],
             "item": [
-
+              {
+                "linkId": "6.1.1",
+                "text": "Moiety",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.2",
+                "text": "Formulation",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.3",
+                "text": "Strength",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.4",
+                "text": "Route",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.5",
+                "text": "Dose",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.6",
+                "text": "Frequency",
+                "type": "string",
+                "required": true
+              }
             ]
           },
           {
-            "linkId": "3.1",
+            "linkId": "6.1",
             "type": "group",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "gtable"
+                    }
+                  ]
+                }
+              }
+            ],
             "item": [
-
+              {
+                "linkId": "6.1.1",
+                "text": "Moiety",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.2",
+                "text": "Formulation",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.3",
+                "text": "Strength",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.4",
+                "text": "Route",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.5",
+                "text": "Dose",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.1.6",
+                "text": "Frequency",
+                "type": "string",
+                "required": true
+              }
             ]
           },
           {
-            "linkId": "3.1",
-            "type": "group",
-            "item": [
-
+            "linkId": "6.2",
+            "text": "Patients must remain on around-the-clock opioids while taking a TIRF medicine. This patient is opioid tolerant because he/she is currently prescribed (exclusive of a TIRF medicine) one or more of the following opioid regimens daily and has been prescribed this regimen(s) for one week or longer (check all that apply)",
+            "type": "choice",
+            "required": true,
+            "repeats": true,
+            "answerOption": [
+              {
+                "valueString": "≥ 60 mg oral morphine/day"
+              },
+              {
+                "valueString": "≥ 25 micrograms transdermal fentanyl/hour"
+              },
+              {
+                "valueString": "≥ 30 mg oral oxycodone/day"
+              },
+              {
+                "valueString": "≥ 8 mg oral hydromorphone/day"
+              },
+              {
+                "valueString": "≥ 25 mg oral oxymorphone/day"
+              },
+              {
+                "valueString": "≥ 60 mg oral hydrocodone/day"
+              },
+              {
+                "valueString": "an equianalgesic dose of another opioid"
+              }
             ]
           }
         ]
@@ -504,7 +597,64 @@
         "type": "group",
         "text": "Concomitant Medications",
         "item": [
-
+          {
+            "linkId": "7.1",
+            "text": "Concomitant Medications (check all that apply)",
+            "type": "choice",
+            "required": true,
+            "repeats": true,
+            "answerOption": [
+              {
+                "valueString": "Benzodiazepines"
+              },
+              {
+                "valueString": "Gabapentinoids"
+              },
+              {
+                "valueString": "Sedative Hypnotics"
+              },
+              {
+                "valueString": "Tranquilizers"
+              },
+              {
+                "valueString": "Muscle Relaxants"
+              },
+              {
+                "valueString": "Barbiturates"
+              },
+              {
+                "valueString": "Antipsychotics"
+              },
+              {
+                "valueString": "Sodium Oxybate"
+              },
+              {
+                "valueString": "Alcohol"
+              },
+              {
+                "valueString": "Prescription Cannabinoids"
+              },
+              {
+                "valueString": "Prescription Insomnia Medications"
+              },
+              {
+                "valueString": "Other CNS depressant"
+              },
+              {
+                "valueString": "None"
+              }
+            ]
+          },
+          {
+            "linkId": "7.2",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/sub-questionnaire",
+                "valueCanonical": "questionnaire/provider-signature"
+              }
+            ],
+            "type": "display"
+          }
         ]
       }      
     ]
