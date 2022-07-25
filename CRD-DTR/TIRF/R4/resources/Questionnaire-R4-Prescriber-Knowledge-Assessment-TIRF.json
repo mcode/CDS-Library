@@ -39,31 +39,76 @@
             "linkId": "1.2",
             "text": "Address",
             "type": "string",
-            "required": false
+            "required": false,
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                "valueExpression": {
+                  "language": "text/cql",
+                  "expression": "\"BasicPractitionerInfoPrepopulation\".Line"
+                }
+              }
+            ]
           },
           {
             "linkId": "1.3",
             "text": "City",
             "type": "string",
-            "required": false
+            "required": false,
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                "valueExpression": {
+                  "language": "text/cql",
+                  "expression": "\"BasicPractitionerInfoPrepopulation\".City"
+                }
+              }
+            ]
           },
           {
             "linkId": "1.4",
             "text": "State",
             "type": "string",
-            "required": false
+            "required": false,
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                "valueExpression": {
+                  "language": "text/cql",
+                  "expression": "\"BasicPractitionerInfoPrepopulation\".State"
+                }
+              }
+            ]
           },
           {
             "linkId": "1.5",
             "text": "Zip",
             "type": "string",
-            "required": false
+            "required": false,
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                "valueExpression": {
+                  "language": "text/cql",
+                  "expression": "\"BasicPractitionerInfoPrepopulation\".Zip"
+                }
+              }
+            ]
           },
           {
             "linkId": "1.6",
             "text": "Phone",
             "type": "string",
-            "required": false
+            "required": false,
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                "valueExpression": {
+                  "language": "text/cql",
+                  "expression": "\"BasicPractitionerInfoPrepopulation\".Phone"
+                }
+              }
+            ]
           },
           {
             "linkId": "1.7",
@@ -75,13 +120,31 @@
             "linkId": "1.8",
             "text": "Fax",
             "type": "string",
-            "required": false
+            "required": false,
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                "valueExpression": {
+                  "language": "text/cql",
+                  "expression": "\"BasicPractitionerInfoPrepopulation\".Fax"
+                }
+              }
+            ]
           },
           {
             "linkId": "1.9",
             "text": "Email Address",
             "type": "string",
-            "required": false
+            "required": false,
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                "valueExpression": {
+                  "language": "text/cql",
+                  "expression": "\"BasicPractitionerInfoPrepopulation\".Email"
+                }
+              }
+            ]
           }
         ]
       },
