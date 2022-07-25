@@ -83,21 +83,7 @@
               {
                 "linkId": "1.3.1",
                 "text": "Are you Hispanic or Latino?",
-                "type": "choice",
-                "answerOption": [
-                  {
-                    "valueCoding": {
-                      "code": "Hispanic or Latino",
-                      "display": "Yes"
-                    }
-                  },
-                  {
-                    "valueCoding": {
-                      "code": "Not Hispanic or Latino",
-                      "display": "No"
-                    }
-                  }
-                ]
+                "type": "boolean"
               }
             ]
           },
@@ -144,13 +130,22 @@
             "required": true,
             "answerOption": [
               {
-                "valueString": "Morning"
+                "valueCoding": {
+                  "code": "Morning",
+                  "display": "Morning"
+                }
               },
               {
-                "valueString": "Afternoon"
+                "valueCoding": {
+                  "code": "Afternoon",
+                  "display": "Afternoon"
+                }
               },
               {
-                "valueString": "Evening"
+                "valueCoding": {
+                  "code": "Evening",
+                  "display": "Evening"
+                }
               }
             ]
           },
@@ -161,46 +156,42 @@
             "required": true,
             "answerOption": [
               {
-                "valueString": "Text to Mobile #"
+                "valueCoding": {
+                  "code": "Text to Mobile #",
+                  "display": "Text to Mobile #"
+                }
               },
               {
-                "valueString": "Email"
+                "valueCoding": {
+                  "code": "Email",
+                  "display": "Email"
+                }
               },
               {
-                "valueString": "Phone Call"
+                "valueCoding": {
+                  "code": "Phone Call",
+                  "display": "Phone Call"
+                }
               },
               {
-                "valueString": "Postal Mail"
+                "valueCoding": {
+                  "code": "Postal Mail",
+                  "display": "Postal Mail"
+                }
               }
             ]
           },
           {
             "linkId": "1.12",
             "text": "Is there a child in the home or are you a caregiver of small children?",
-            "type": "choice",
-            "required": true,
-            "answerOption": [
-              {
-                "valueString": "Yes"
-              },
-              {
-                "valueString": "No"
-              }
-            ]
+            "type": "boolean",
+            "required": true
           },
           {
             "linkId": "1.13",
             "text": "Do you have a safe and secure place to store your medicine?",
-            "type": "choice",
-            "required": true,
-            "answerOption": [
-              {
-                "valueString": "Yes"
-              },
-              {
-                "valueString": "No"
-              }
-            ]
+            "type": "boolean",
+            "required": true
           }
         ]
       },
@@ -339,16 +330,8 @@
           {
             "linkId": "5.1",
             "text": "Prior TIRF Use within the last 6 months",
-            "type": "choice",
-            "required": true,
-            "answerOption": [
-              {
-                "valueString": "Yes"
-              },
-              {
-                "valueString": "No"
-              }
-            ]
+            "type": "boolean",
+            "required": true
           },
           {
             "linkId": "5.2",
@@ -381,10 +364,16 @@
             "required": true,
             "answerOption": [
               {
-                "valueString": "Cancer"
+                "valueCoding": {
+                  "code": "Cancer",
+                  "display": "Cancer"
+                }
               },
               {
-                "valueString": "Non-cancer Pain"
+                "valueCoding": {
+                  "code": "Non-cancer Pain",
+                  "display": "Non-cancer Pain"
+                }
               }
             ]
           }
@@ -451,142 +440,163 @@
             ]
           },
           {
-            "linkId": "6.1",
-            "type": "group",
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "gtable"
-                    }
-                  ]
-                }
-              }
-            ],
-            "item": [
-              {
-                "linkId": "6.1.1",
-                "text": "Moiety",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.2",
-                "text": "Formulation",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.3",
-                "text": "Strength",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.4",
-                "text": "Route",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.5",
-                "text": "Dose",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.6",
-                "text": "Frequency",
-                "type": "string",
-                "required": true
-              }
-            ]
-          },
-          {
-            "linkId": "6.1",
-            "type": "group",
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://hl7.org/fhir/questionnaire-item-control",
-                      "code": "gtable"
-                    }
-                  ]
-                }
-              }
-            ],
-            "item": [
-              {
-                "linkId": "6.1.1",
-                "text": "Moiety",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.2",
-                "text": "Formulation",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.3",
-                "text": "Strength",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.4",
-                "text": "Route",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.5",
-                "text": "Dose",
-                "type": "string",
-                "required": true
-              },
-              {
-                "linkId": "6.1.6",
-                "text": "Frequency",
-                "type": "string",
-                "required": true
-              }
-            ]
-          },
-          {
             "linkId": "6.2",
+            "type": "group",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "gtable"
+                    }
+                  ]
+                }
+              }
+            ],
+            "item": [
+              {
+                "linkId": "6.2.1",
+                "text": "Moiety",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.2.2",
+                "text": "Formulation",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.2.3",
+                "text": "Strength",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.2.4",
+                "text": "Route",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.2.5",
+                "text": "Dose",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.2.6",
+                "text": "Frequency",
+                "type": "string",
+                "required": true
+              }
+            ]
+          },
+          {
+            "linkId": "6.3",
+            "type": "group",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/questionnaire-item-control",
+                      "code": "gtable"
+                    }
+                  ]
+                }
+              }
+            ],
+            "item": [
+              {
+                "linkId": "6.3.1",
+                "text": "Moiety",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.3.2",
+                "text": "Formulation",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.3.3",
+                "text": "Strength",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.3.4",
+                "text": "Route",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.3.5",
+                "text": "Dose",
+                "type": "string",
+                "required": true
+              },
+              {
+                "linkId": "6.3.6",
+                "text": "Frequency",
+                "type": "string",
+                "required": true
+              }
+            ]
+          },
+          {
+            "linkId": "6.4",
             "text": "Patients must remain on around-the-clock opioids while taking a TIRF medicine. This patient is opioid tolerant because he/she is currently prescribed (exclusive of a TIRF medicine) one or more of the following opioid regimens daily and has been prescribed this regimen(s) for one week or longer (check all that apply)",
             "type": "choice",
             "required": true,
             "repeats": true,
             "answerOption": [
               {
-                "valueString": "≥ 60 mg oral morphine/day"
+                "valueCoding": {
+                  "code": "≥ 60 mg oral morphine/day",
+                  "display": "≥ 60 mg oral morphine/day"
+                }
               },
               {
-                "valueString": "≥ 25 micrograms transdermal fentanyl/hour"
+                "valueCoding": {
+                  "code": "≥ 25 micrograms transdermal fentanyl/hour",
+                  "display": "≥ 25 micrograms transdermal fentanyl/hour"
+                }
               },
               {
-                "valueString": "≥ 30 mg oral oxycodone/day"
+                "valueCoding": {
+                  "code": "≥ 30 mg oral oxycodone/day",
+                  "display": "≥ 30 mg oral oxycodone/day"
+                }
               },
               {
-                "valueString": "≥ 8 mg oral hydromorphone/day"
+                "valueCoding": {
+                  "code": "≥ 8 mg oral hydromorphone/day",
+                  "display": "≥ 8 mg oral hydromorphone/day"
+                }
               },
               {
-                "valueString": "≥ 25 mg oral oxymorphone/day"
+                "valueCoding": {
+                  "code": "≥ 25 mg oral oxymorphone/day",
+                  "display": "≥ 25 mg oral oxymorphone/day"
+                }
               },
               {
-                "valueString": "≥ 60 mg oral hydrocodone/day"
+                "valueCoding": {
+                  "code": "≥ 60 mg oral hydrocodone/day",
+                  "display": "≥ 60 mg oral hydrocodone/day"
+                }
               },
               {
-                "valueString": "an equianalgesic dose of another opioid"
+                "valueCoding": {
+                  "code": "an equianalgesic dose of another opioid",
+                  "display": "an equianalgesic dose of another opioid"
+                }
               }
             ]
           }
@@ -605,43 +615,82 @@
             "repeats": true,
             "answerOption": [
               {
-                "valueString": "Benzodiazepines"
+                "valueCoding": {
+                  "code": "Benzodiazepines",
+                  "display": "Benzodiazepines"
+                }
               },
               {
-                "valueString": "Gabapentinoids"
+                "valueCoding": {
+                  "code": "Gabapentinoids",
+                  "display": "Gabapentinoids"
+                }
               },
               {
-                "valueString": "Sedative Hypnotics"
+                "valueCoding": {
+                  "code": "Sedative Hypnotics",
+                  "display": "Sedative Hypnotics"
+                }
               },
               {
-                "valueString": "Tranquilizers"
+                "valueCoding": {
+                  "code": "Tranquilizers",
+                  "display": "Tranquilizers"
+                }
               },
               {
-                "valueString": "Muscle Relaxants"
+                "valueCoding": {
+                  "code": "Muscle Relaxants",
+                  "display": "Muscle Relaxants"
+                }
               },
               {
-                "valueString": "Barbiturates"
+                "valueCoding": {
+                  "code": "Barbiturates",
+                  "display": "Barbiturates"
+                }
               },
               {
-                "valueString": "Antipsychotics"
+                "valueCoding": {
+                  "code": "Antipsychotics",
+                  "display": "Antipsychotics"
+                }
               },
               {
-                "valueString": "Sodium Oxybate"
+                "valueCoding": {
+                  "code": "Sodium Oxybate",
+                  "display": "Sodium Oxybate"
+                }
               },
               {
-                "valueString": "Alcohol"
+                "valueCoding": {
+                  "code": "Alcohol",
+                  "display": "Alcohol"
+                }
               },
               {
-                "valueString": "Prescription Cannabinoids"
+                "valueCoding": {
+                  "code": "Prescription Cannabinoids",
+                  "display": "Prescription Cannabinoids"
+                }
               },
               {
-                "valueString": "Prescription Insomnia Medications"
+                "valueCoding": {
+                  "code": "Prescription Insomnia Medications",
+                  "display": "Prescription Insomnia Medications"
+                }
               },
               {
-                "valueString": "Other CNS depressant"
+                "valueCoding": {
+                  "code": "Other CNS depressant",
+                  "display": "Other CNS depressant"
+                }
               },
               {
-                "valueString": "None"
+                "valueCoding": {
+                  "code": "None",
+                  "display": "None"
+                }
               }
             ]
           },

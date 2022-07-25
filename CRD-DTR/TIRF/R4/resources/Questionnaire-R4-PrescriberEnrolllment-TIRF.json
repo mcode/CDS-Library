@@ -54,19 +54,34 @@
             "required": false,
             "answerOption": [
               {
-                "valueString": "MD"
+                "valueCoding": {
+                  "code": "MD",
+                  "display": "MD"
+                }
               },
               {
-                "valueString": "NP"
+                "valueCoding": {
+                  "code": "NP",
+                  "display": "NP"
+                }
               },
               {
-                "valueString": "PA"
+                "valueCoding": {
+                  "code": "PA",
+                  "display": "PA"
+                }
               },
               {
-                "valueString": "DO"
+                "valueCoding": {
+                  "code": "DO",
+                  "display": "DO"
+                }
               },
               {
-                "valueString": "Other"
+                "valueCoding": {
+                  "code": "Other",
+                  "display": "Other"
+                }
               }
             ]
           },
@@ -125,13 +140,22 @@
             "required": false,
             "answerOption": [
               {
-                "valueString": "Morning"
+                "valueCoding": {
+                  "code": "Morning",
+                  "display": "Morning"
+                }
               },
               {
-                "valueString": "Afternoon"
+                "valueCoding": {
+                  "code": "Afternoon",
+                  "display": "Afternoon"
+                }
               },
               {
-                "valueString": "Evening"
+                "valueCoding": {
+                  "code": "Evening",
+                  "display": "Evening"
+                }
               }
             ]
           },
@@ -142,13 +166,22 @@
             "required": false,
             "answerOption": [
               {
-                "valueString": "Text to Mobile #"
+                "valueCoding": {
+                  "code": "Text to Mobile #",
+                  "display": "Text to Mobile #"
+                }
               },
               {
-                "valueString": "Email"
+                "valueCoding": {
+                  "code": "Email",
+                  "display": "Email"
+                }
               },
               {
-                "valueString": "Phone Call"
+                "valueCoding": {
+                  "code": "Phone Call",
+                  "display": "Phone Call"
+                }
               }
             ]
           }
@@ -190,13 +223,22 @@
             "required": false,
             "answerOption": [
               {
-                "valueString": "Morning"
+                "valueCoding": {
+                  "code": "Morning",
+                  "display": "Morning"
+                }
               },
               {
-                "valueString": "Afternoon"
+                "valueCoding": {
+                  "code": "Afternoon",
+                  "display": "Afternoon"
+                }
               },
               {
-                "valueString": "Evening"
+                "valueCoding": {
+                  "code": "Evening",
+                  "display": "Evening"
+                }
               }
             ]
           },
@@ -207,13 +249,22 @@
             "required": false,
             "answerOption": [
               {
-                "valueString": "Text to Mobile #"
+                "valueCoding": {
+                  "code": "Text to Mobile #",
+                  "display": "Text to Mobile #"
+                }
               },
               {
-                "valueString": "Email"
+                "valueCoding": {
+                  "code": "Email",
+                  "display": "Email"
+                }
               },
               {
-                "valueString": "Phone Call"
+                "valueCoding": {
+                  "code": "Phone Call",
+                  "display": "Phone Call"
+                }
               }
             ]
           }
