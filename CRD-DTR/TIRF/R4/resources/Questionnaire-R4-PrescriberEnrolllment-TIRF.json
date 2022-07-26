@@ -163,21 +163,21 @@
               {
                 "valueCoding": {
                   "code": "sms",
-                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
+                  "system": "http://hl7.org/fhir/contact-point-system",
                   "display": "Text to Mobile #"
                 }
               },
               {
                 "valueCoding": {
                   "code": "email",
-                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
+                  "system": "http://hl7.org/fhir/contact-point-system",
                   "display": "Email"
                 }
               },
               {
                 "valueCoding": {
                   "code": "phone",
-                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
+                  "system": "http://hl7.org/fhir/contact-point-system",
                   "display": "Phone Call"
                 }
               }
@@ -240,21 +240,21 @@
               {
                 "valueCoding": {
                   "code": "sms",
-                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
+                  "system": "http://hl7.org/fhir/contact-point-system",
                   "display": "Text to Mobile #"
                 }
               },
               {
                 "valueCoding": {
                   "code": "email",
-                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
+                  "system": "http://hl7.org/fhir/contact-point-system",
                   "display": "Email"
                 }
               },
               {
                 "valueCoding": {
                   "code": "phone",
-                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
+                  "system": "http://hl7.org/fhir/contact-point-system",
                   "display": "Phone Call"
                 }
               }
