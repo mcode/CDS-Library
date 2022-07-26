@@ -160,22 +160,13 @@
             "required": true,
             "answerOption": [
               {
-                "valueCoding": {
-                  "code": "Morning",
-                  "display": "Morning"
-                }
+                "valueString": "Morning"
               },
               {
-                "valueCoding": {
-                  "code": "Afternoon",
-                  "display": "Afternoon"
-                }
+                "valueString": "Afternnon"
               },
               {
-                "valueCoding": {
-                  "code": "Evening",
-                  "display": "Evening"
-                }
+                "valueString": "Evening"
               }
             ]
           },
@@ -187,25 +178,29 @@
             "answerOption": [
               {
                 "valueCoding": {
-                  "code": "Text to Mobile #",
+                  "code": "sms",
+                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
                   "display": "Text to Mobile #"
                 }
               },
               {
                 "valueCoding": {
-                  "code": "Email",
+                  "code": "email",
+                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
                   "display": "Email"
                 }
               },
               {
                 "valueCoding": {
-                  "code": "Phone Call",
+                  "code": "phone",
+                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
                   "display": "Phone Call"
                 }
               },
               {
                 "valueCoding": {
-                  "code": "Postal Mail",
+                  "code": "other",
+                  "system": "http://hl7.org/fhir/ValueSet/contact-point-system",
                   "display": "Postal Mail"
                 }
               }
