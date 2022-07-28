@@ -42,3 +42,10 @@ define OrgName: ([Organization] org).name.value
 define MD: (singleton from (
   "OrderingProvider".identifier identifier
     where identifier.type.coding[0].code = 'MD')).value.value
+
+define ValidTIRFCredentials: 
+  from "OrderingProvider".qualification qualification 
+    where qualification.identifier.system.value = 'http://www.nlm.nih.gov/research/umls/rxnorm' and qualification.identifier.value.value = '1237051'
+
+define ThirdPartyCredentials: ValidTIRFCredentials[0].code.text.value
+define ThirdPartyIssuer: ValidTIRFCredentials[0].issuer.display.value
