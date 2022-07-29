@@ -378,6 +378,7 @@
         "linkId": "6",
         "type": "group",
         "text": "Verify Opioid Tolerance",
+        "required": true,
         "item": [
           {
             "linkId": "6.1",
@@ -454,38 +455,32 @@
               {
                 "linkId": "6.2.1",
                 "text": "Moiety",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.2.2",
                 "text": "Formulation",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.2.3",
                 "text": "Strength",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.2.4",
                 "text": "Route",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.2.5",
                 "text": "Dose",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.2.6",
                 "text": "Frequency",
-                "type": "string",
-                "required": true
+                "type": "string"
               }
             ]
           },
@@ -509,38 +504,32 @@
               {
                 "linkId": "6.3.1",
                 "text": "Moiety",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.3.2",
                 "text": "Formulation",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.3.3",
                 "text": "Strength",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.3.4",
                 "text": "Route",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.3.5",
                 "text": "Dose",
-                "type": "string",
-                "required": true
+                "type": "string"
               },
               {
                 "linkId": "6.3.6",
                 "text": "Frequency",
-                "type": "string",
-                "required": true
+                "type": "string"
               }
             ]
           },
