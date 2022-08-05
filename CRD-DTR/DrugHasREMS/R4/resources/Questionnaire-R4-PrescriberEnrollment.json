@@ -453,18 +453,55 @@
             ]
         },
         {
-            "linkId": "3",
+          "linkId": "3",
+          "type": "group",
+          "text": "Prescriber Certification (if applicable)",
+          "item": [
+            {
+              "linkId": "3.1",
+              "text": "Prescriber Certification Type",
+              "type": "string",
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"DrugHasREMSPrescriberEnrollmentPrepopulation\".ThirdPartyCredentials"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "3.2",
+              "text": "Prescriber Certification Issuer",
+              "type": "string",
+              "required": false,
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                  "valueExpression": {
+                    "language": "text/cql",
+                    "expression": "\"DrugHasREMSPrescriberEnrollmentPrepopulation\".ThirdPartyIssuer"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+            "linkId": "4",
             "type": "group",
             "text": "Prescriber Attestations",
             "item": [
                 {
-                    "linkId": "3.1",
+                    "linkId": "4.1",
                     "text": "By signing this form, I agree TURALIO is only available through the TURALIO REMS and I agree to comply with the following TURALIO REMS requirements: \n\n I have: \n - Reviewed the Prescribing Information, Program Overview and Prescriber Training. \n - Successfully completed the Prescriber Knowledge Assessment and submitted it to the TURALIO REMS. \n\n Before treatment initiation and with the first dose of TURALIO: \n - I understand that I should counsel the patient on the risk of serious and potentially fatal liver injury, and liver test monitoring at baseline and periodically during treatment. \n - I must assess the patient by obtaining baseline liver tests. I must submit the results of the assessment on the Patient Enrollment Form. \n - I must enroll patients in the TURALIO REMS by completing and submitting the Patient Enrollment Form. \n\n During treatment with TURALIO: \n - I must assess the patient by obtaining liver tests weekly for the first 8 weeks, then every 2 weeks for 1 month, then every 3 months and modify the dose of TURALIO as needed in accordance with the Prescribing Information. \n - I must prescribe no more than a 30 days supply for each of the first 3 months of treatment. \n - I must complete the Patient Status Form every month for the first 3 months of treatment, at months 6, 9, and 12 and then every 6 months thereafter while the patient receives TURALIO. \n\n At all times: \n - I must report adverse events of serious and potentially fatal liver injury by submitting the Liver Adverse Event Reporting Form. \n - I understand that Daiichi Sankyo, Inc. and/or its agents may contact me by phone, mail or email to provide or obtain additional information related to the REMS program, including details regarding any reported liver adverse events. \n",
                     "type": "display",
                     "readOnly": true
                   },
                   {
-                    "linkId": "3.2",
+                    "linkId": "4.2",
                     "extension": [
                       {
                         "url": "http://hl7.org/fhir/StructureDefinition/sub-questionnaire",
