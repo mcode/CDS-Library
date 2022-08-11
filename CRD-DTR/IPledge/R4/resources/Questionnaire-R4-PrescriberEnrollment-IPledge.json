@@ -1,0 +1,30 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "IPledgeRemsPrescriberEnrollmentForm",
+    "name": "IPledgeRemsPrescriberEnrollmentForm",
+    "title": "IPledge Rems Prescriber Enrollment Form",
+    "status": "draft",
+    "subjectType": [
+      "Practitioner"
+    ],
+    "date": "2022-05-28",
+    "publisher": "FDA-REMS",
+    "item": [
+        {
+            "linkId": "1",
+            "type": "group",
+            "text": "Prescriber Information",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "2",
+            "type": "group",
+            "text": "Prescriber Attestation",
+            "item": [
+
+            ]
+        }
+    ]
+}

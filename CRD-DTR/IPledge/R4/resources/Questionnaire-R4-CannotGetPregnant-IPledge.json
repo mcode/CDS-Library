@@ -1,0 +1,62 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "IPledgeRemsPatientEnrollmentCannotGetPregnant",
+    "name": "IPledgeRemsPatientEnrollmentCannotGetPregnant",
+    "title": "IPledge Rems Patient Enrollment (Cannot Get Pregnant)",
+    "status": "draft",
+    "subjectType": [
+      "Patient"
+    ],
+    "date": "2020-05-20",
+    "publisher": "Da Vinci DTR",
+    "item": [
+        {
+            "linkId": "1",
+            "type": "group",
+            "text": "Determine Patient Category",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "2",
+            "type": "group",
+            "text": "Determine Risk Category",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "3",
+            "type": "group",
+            "text": "Confirm Risk Category",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "4",
+            "type": "group",
+            "text": "Enter Patient Information",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "5",
+            "type": "group",
+            "text": "Informed Consent (For All Patients)",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "6",
+            "type": "group",
+            "text": "Patient Counseling",
+            "item": [
+
+            ]
+        }
+    ]
+}

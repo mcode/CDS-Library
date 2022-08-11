@@ -1,0 +1,62 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "IPledgeRemsPatientEnrollmentCanGetPregnant",
+    "name": "IPledgeRemsPatientEnrollmentCanGetPregnant",
+    "title": "IPledge Rems Patient Enrollment (Can Get Pregnant)",
+    "status": "draft",
+    "subjectType": [
+      "Patient"
+    ],
+    "date": "2020-05-20",
+    "publisher": "Da Vinci DTR",
+    "item": [
+        {
+            "linkId": "1",
+            "type": "group",
+            "text": "Determine Patient Category",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "2",
+            "type": "group",
+            "text": "Pregnancy Test Results",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "3",
+            "type": "group",
+            "text": "Enter Patient Information",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "4",
+            "type": "group",
+            "text": "Informed Consent (For All Patients)",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "5",
+            "type": "group",
+            "text": "Informed Consent About Birth Defects (For Patients Who Can Get Pregnant)",
+            "item": [
+
+            ]
+        },
+        {
+            "linkId": "6",
+            "type": "group",
+            "text": "Patient Counseling",
+            "item": [
+
+            ]
+        }
+    ]
+}
