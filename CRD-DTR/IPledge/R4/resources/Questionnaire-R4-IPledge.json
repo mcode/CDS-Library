@@ -1,8 +1,8 @@
 {
     "resourceType": "Questionnaire",
-    "id": "IPledgeRemsPatientEnrollmentCanGetPregnant",
-    "name": "IPledgeRemsPatientEnrollmentCanGetPregnant",
-    "title": "IPledge Rems Patient Enrollment (Can Get Pregnant)",
+    "id": "IPledgeRemsPatientEnrollment",
+    "name": "IPledgeRemsPatientEnrollment",
+    "title": "IPledge Rems Patient Enrollment",
     "status": "draft",
     "subjectType": [
       "Patient"

@@ -21,10 +21,7 @@ define RESULT_InfoLink:
     'https://www.accessdata.fda.gov/drugsatfda_docs/rems/IPledge_2020_08_04_REMS_Full.pdf'
 
 define RESULT_QuestionnaireOrderUri:
-    'Questionnaire/IPledgeRemsPatientEnrollmentCanGetPregnant'
-
-define RESULT_QuestionnairePrescriberKnowledgeAssessmentUri:
-    'Questionnaire/IPledgeRemsPatientEnrollmentCannotGetPregnant'
+    'Questionnaire/IPledgeRemsPatientEnrollment'
 
 define RESULT_QuestionnairePrescriberEnrollmentUri:
     'Questionnaire/IPledgeRemsPrescriberEnrollmentForm'
