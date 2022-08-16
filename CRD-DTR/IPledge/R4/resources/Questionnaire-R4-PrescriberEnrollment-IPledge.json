@@ -9,6 +9,12 @@
     ],
     "date": "2022-05-28",
     "publisher": "FDA-REMS",
+    "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+          "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/IPledgePrescriberEnrollment-prepopulation"
+        }
+    ],
     "item": [
         {
             "linkId": "1",
