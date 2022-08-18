@@ -43,9 +43,9 @@ define MD: (singleton from (
   "OrderingProvider".identifier identifier
     where identifier.type.coding[0].code = 'MD')).value.value
 
-define ValidTIRFCredentials: 
+define ValidIPledgeCredentials: 
   from "OrderingProvider".qualification qualification 
     where qualification.identifier.system.value = 'http://www.nlm.nih.gov/research/umls/rxnorm' and qualification.identifier.value.value = '6064'
 
-define ThirdPartyCredentials: ValidTIRFCredentials[0].code.text.value
-define ThirdPartyIssuer: ValidTIRFCredentials[0].issuer.display.value
+define ThirdPartyCredentials: ValidIPledgeCredentials[0].code.text.value
+define ThirdPartyIssuer: ValidIPledgeCredentials[0].issuer.display.value
