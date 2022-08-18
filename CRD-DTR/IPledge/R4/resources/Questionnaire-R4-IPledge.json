@@ -9,6 +9,20 @@
     ],
     "date": "2020-05-20",
     "publisher": "Da Vinci DTR",
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+            "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/IPledge-prepopulation"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+            "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/BasicPatientInfo-prepopulation"
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+            "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/BasicPractitionerInfo-prepopulation"
+        }
+    ],
     "item": [
         {
             "linkId": "1",
@@ -163,25 +177,61 @@
                     "linkId": "5.1",
                     "text": "First Name",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                            "valueExpression": {
+                                "language": "text/cql",
+                                "expression": "\"BasicPatientInfoPrepopulation\".FirstName"
+                            }
+                        }
+                    ]
                 },
                 {
                     "linkId": "5.2",
                     "text": "Middle Initial",
                     "type": "string",
-                    "required": false
+                    "required": false,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPatientInfoPrepopulation\".MiddleInitial"
+                          }
+                        }
+                    ]
                 },
                 {
                     "linkId": "5.3",
                     "text": "Last Name",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPatientInfoPrepopulation\".LastName"
+                          }
+                        }
+                    ]
                 },
                 {
                     "linkId": "5.4",
                     "text": "Address Line 1",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPatientInfoPrepopulation\".Line"
+                          }
+                        }
+                    ]
                 },
                 {
                     "linkId": "5.5",
@@ -193,25 +243,61 @@
                     "linkId": "5.6",
                     "text": "City",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPatientInfoPrepopulation\".City"
+                          }
+                        }
+                    ]
                 },
                 {
                     "linkId": "5.7",
                     "text": "State",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPatientInfoPrepopulation\".State"
+                          }
+                        }
+                    ]
                 },
                 {
                     "linkId": "5.8",
                     "text": "Zip",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPatientInfoPrepopulation\".Zip"
+                          }
+                        }
+                    ]
                 },
                 {
                     "linkId": "5.9",
                     "text": "Mobile Phone Number",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPatientInfoPrepopulation\".Phone"
+                          }
+                        }
+                    ]
                 },
                 {
                     "linkId": "5.10",
@@ -223,7 +309,16 @@
                     "linkId": "5.11",
                     "text": "Date of Birth",
                     "type": "date",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPatientInfoPrepopulation\".DateOfBirth"
+                          }
+                        }
+                    ]
                 },
                 {
                     "linkId": "5.12",
@@ -493,7 +588,16 @@
                     "linkId": "8.4",
                     "text": "Patient Name",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPatientInfoPrepopulation\".FullName"
+                          }
+                        }
+                    ]
                 }, 
                 {
                     "linkId": "8.5",
@@ -586,7 +690,16 @@
                     "linkId": "9.7",
                     "text": "Doctor Name",
                     "type": "string",
-                    "required": true
+                    "required": true,
+                    "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                          "valueExpression": {
+                            "language": "text/cql",
+                            "expression": "\"BasicPractitionerInfoPrepopulation\".FullName"
+                          }
+                        }
+                    ]
                 },
                 {
                     "linkId": "9.8",
