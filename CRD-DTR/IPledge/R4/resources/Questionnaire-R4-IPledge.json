@@ -43,6 +43,11 @@
                             "linkId": "1.2.1",
                             "text": "Patient who can get pregnant",
                             "type": "boolean",
+                            "initial": [
+                                {
+                                    "valueBoolean": false
+                                }
+                            ],
                             "required": true
                         }
                     ]
