@@ -18,7 +18,7 @@ define DOCUMENTATION_REQUIRED:
   true
 
 define RESULT_InfoLink:
-    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/TIRF_2020_08_04_REMS_Full.pdf'
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/TIRF_2022_08_17_REMS_Document.pdf'
 
 define RESULT_QuestionnaireOrderUri:
     'Questionnaire/TIRFRemsPatientEnrollment'
