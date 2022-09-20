@@ -19,6 +19,16 @@ define DOCUMENTATION_REQUIRED:
 
 define RESULT_InfoLink:
     'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Turalio_2020_08_04_REMS_Full.pdf'
+define INFO_PATIENT_MedicationGuide:
+    'https://daiichisankyo.us/prescribing-information-portlet/getPIContent?productName=Turalio_Med&inline=true'
+define INFO_PATIENT_PatientGuide:
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Turalio_2020_12_16_Patient_Guide.pdf'
+define INFO_PRESCRIBER_PrescribingInformation:
+    'https://daiichisankyo.us/prescribing-information-portlet/getPIContent?productName=Turalio&inline=true'
+define INFO_PRESCRIBER_ProgramOverview:
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Turalio_2020_12_16_Program_Overview.pdf'
+define INFO_PRESCRIBER_PrescriberTraining:
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Turalio_2020_12_16_Prescriber_Training.pdf'
 
 define RESULT_QuestionnaireOrderUri:
     'Questionnaire/TuralioRemsPatientEnrollment'  
