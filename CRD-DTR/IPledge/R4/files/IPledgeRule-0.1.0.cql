@@ -20,6 +20,18 @@ define DOCUMENTATION_REQUIRED:
 define RESULT_InfoLink:
     'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Isotretinoin_2021_10_8_REMS_Document.pdf'
 
+define INFO_PATIENT_FactSheet:
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Isotretinoin_2021_10_8_Fact_Sheet.pdf'
+
+define INFO_PATIENT_GuideForPatientsWhoCanGetPregnant:
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Isotretinoin_2021_10_8_Guide_for_Patients_Who_Can_Get_pregnant.pdf'
+define INFO_PATIENT_ContraceptiveCounselingGuide:
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Isotretinoin_2021_10_8_Contraception_Counseling_Guide.pdf'
+define INFO_PRESCRIBER_PrescriberGuide:
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Isotretinoin_2021_10_8_Prescriber_Guide.pdf'
+define INFO_PRESCRIBER_ComprehensionQuestions:
+    'https://www.accessdata.fda.gov/drugsatfda_docs/rems/Isotretinoin_2021_10_8_Comprehension_Questions.pdf'
+
 define RESULT_QuestionnaireOrderUri:
     'Questionnaire/IPledgeRemsPatientEnrollment'
 
