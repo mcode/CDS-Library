@@ -12,7 +12,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
-      "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/DrugHasREMS-prepopulation"
+      "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/Turalio-prepopulation"
     }
   ],
   "item": [
@@ -143,7 +143,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/cql",
-                "expression": "\"DrugHasREMSPrepopulation\".LatestWeightResult"
+                "expression": "\"TuralioPrepopulation\".LatestWeightResult"
               }
             }
           ],
@@ -242,7 +242,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/cql",
-                "expression": "\"DrugHasREMSPrepopulation\".TakingTuralio"
+                "expression": "\"TuralioPrepopulation\".TakingTuralio"
               }
             }
           ],
@@ -256,7 +256,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".TuralioDate"
+                    "expression": "\"TuralioPrepopulation\".TuralioDate"
                   }
                 }
               ],
@@ -486,7 +486,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".ASTResult"
+                    "expression": "\"TuralioPrepopulation\".ASTResult"
                   }
                 }
               ]
@@ -501,7 +501,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".ASTDate"
+                    "expression": "\"TuralioPrepopulation\".ASTDate"
                   }
                 }
               ]
@@ -544,7 +544,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".ALTResult"
+                    "expression": "\"TuralioPrepopulation\".ALTResult"
                   }
                 }
               ]
@@ -559,7 +559,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".ALTDate"
+                    "expression": "\"TuralioPrepopulation\".ALTDate"
                   }
                 }
               ]
@@ -602,7 +602,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".GGTResult"
+                    "expression": "\"TuralioPrepopulation\".GGTResult"
                   }
                 }
               ]
@@ -617,7 +617,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".GGTDate"
+                    "expression": "\"TuralioPrepopulation\".GGTDate"
                   }
                 }
               ]
@@ -660,7 +660,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".TotalBilirubinResult"
+                    "expression": "\"TuralioPrepopulation\".TotalBilirubinResult"
                   }
                 }
               ]
@@ -675,7 +675,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".TotalBilirubinDate"
+                    "expression": "\"TuralioPrepopulation\".TotalBilirubinDate"
                   }
                 }
               ]
@@ -718,7 +718,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".DirectBilirubinResult"
+                    "expression": "\"TuralioPrepopulation\".DirectBilirubinResult"
                   }
                 }
               ]
@@ -733,7 +733,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".DirectBilirubinDate"
+                    "expression": "\"TuralioPrepopulation\".DirectBilirubinDate"
                   }
                 }
               ]
@@ -776,7 +776,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".ALPResult"
+                    "expression": "\"TuralioPrepopulation\".ALPResult"
                   }
                 }
               ]
@@ -791,7 +791,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".ALPDate"
+                    "expression": "\"TuralioPrepopulation\".ALPDate"
                   }
                 }
               ]
@@ -834,7 +834,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".AlbuminResult"
+                    "expression": "\"TuralioPrepopulation\".AlbuminResult"
                   }
                 }
               ]
@@ -849,7 +849,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".AlbuminDate"
+                    "expression": "\"TuralioPrepopulation\".AlbuminDate"
                   }
                 }
               ]
@@ -892,7 +892,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".PTResult"
+                    "expression": "\"TuralioPrepopulation\".PTResult"
                   }
                 }
               ]
@@ -907,7 +907,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrepopulation\".PTDate"
+                    "expression": "\"TuralioPrepopulation\".PTDate"
                   }
                 }
               ]
@@ -934,7 +934,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/cql",
-                "expression": "\"DrugHasREMSPrepopulation\".TakingMeds"
+                "expression": "\"TuralioPrepopulation\".TakingMeds"
               }
             }
           ]
@@ -956,7 +956,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/cql",
-                "expression": "\"DrugHasREMSPrepopulation\".Meds"
+                "expression": "\"TuralioPrepopulation\".Meds"
               }
             }
           ]
@@ -986,7 +986,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/cql",
-                "expression": "\"DrugHasREMSPrepopulation\".MedicalHistory"
+                "expression": "\"TuralioPrepopulation\".MedicalHistory"
               }
             }
           ],
