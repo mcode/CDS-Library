@@ -1,10 +1,10 @@
 {
   "resourceType": "Library",
-  "id": "DrugHasREMSPrescriberEnrollment-prepopulation",
-  "url": "http://hl7.org/fhir/us/davinci-dtr/Library/DrugHasREMSPrescriberEnrollment-prepopulation",
-  "name": "DrugHasREMSPrescriberEnrollment-prepopulation",
+  "id": "TuralioPrescriberEnrollment-prepopulation",
+  "url": "http://hl7.org/fhir/us/davinci-dtr/Library/TuralioPrescriberEnrollment-prepopulation",
+  "name": "TuralioPrescriberEnrollment-prepopulation",
   "version": "0.1.0",
-  "title": "DrugHasREMSPrescriberEnrollment Prepopulation",
+  "title": "TuralioPrescriberEnrollment Prepopulation",
   "status": "draft",
   "type": {
     "coding": [
@@ -103,7 +103,7 @@
   "content": [
     {
       "contentType": "application/elm+json",
-      "url": "files/DrugHasREMS/r4/DrugHasREMSPrescriberEnrollmentPrepopulation-0.1.0.cql"
+      "url": "files/Turalio/r4/TuralioPrescriberEnrollmentPrepopulation-0.1.0.cql"
     }
   ]
 }

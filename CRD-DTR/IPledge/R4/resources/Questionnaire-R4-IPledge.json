@@ -108,12 +108,12 @@
             "item": [
                 {
                     "linkId": "3.1",
-                    "text": "You have indicated that this patient is a patient who cannot become pregnant. The questions that follow will assign a risk category for this patient, based on the reproductive potential according to the requirements of the iPLEDGE REMS. All patients who cannot get pregnant are considered patients who can get pregnant unless one or more of the following applies: 1. Patient is cicgender male (borm a male, aka cis-male) 2. Patient has had a hysterectomy 3. Patient has had a bilateral oophorectomy 4. Patient is post-menopausal",
+                    "text": "You have indicated that this patient is a patient who cannot become pregnant. The questions that follow will assign a risk category for this patient, based on the reproductive potential according to the requirements of the iPLEDGE REMS. All patients who cannot get pregnant are considered patients who can get pregnant unless one or more of the following applies: 1. Patient is cisgender male (born a male, aka cis-male) 2. Patient has had a hysterectomy 3. Patient has had a bilateral oophorectomy 4. Patient is post-menopausal",
                     "type": "display"
                 }, 
                 {
                     "linkId": "3.2",
-                    "text": "Please note that the following conditions DO NOT qualify a patient to be moved from the patient who can become pregnant risk category •  Tubal sterilization • Male vasectomy • Abstinence • Patient has not had a first menstrual period (pre-menarche) • Patient is currently in menopause (but not yet post-menupausal)",
+                    "text": "Please note that the following conditions DO NOT qualify a patient to be moved from the patient who can become pregnant risk category •  Tubal sterilization • Male vasectomy • Abstinence • Patient has not had a first menstrual period (pre-menarche) • Patient is currently in menopause (but not yet post-menopausal)",
                     "type": "display"
                 },
                 {
@@ -155,7 +155,7 @@
                 },
                 {
                     "linkId": "4.4",
-                    "text": "For the iPLEDGE REMS, a patient is considered post-menopausal upon cessation of previously occurring menses as a reuslt of ovarian failure with documentation of hormonal deficiency by a certified healthcare provider (i.e., spontaneous menopause). Hormonal deficiency should be properly documented in the case of spontaneuous menopause as follows: 1. If age > 54 years and with absence of normal menses: serum FSH (Follicle Stimulating Hormone) level elevated to within the post-menopausal range based on the laboratory reference range where the hormonal assay is performed 2. If age < 54 years and with the absence of normal menses: negative serum or urine -hCG with concurrently elevated serum FSH (Follicle Stiumulating Hormone) level in the post-menopausal, depressed estradiol (E2) level in the post-menopausal range, and absent serum progesterone level, based on the laboratory reference ranges where the hormonal assay is performed.",
+                    "text": "For the iPLEDGE REMS, a patient is considered post-menopausal upon cessation of previously occurring menses as a result of ovarian failure with documentation of hormonal deficiency by a certified healthcare provider (i.e., spontaneous menopause). Hormonal deficiency should be properly documented in the case of spontaneous menopause as follows: 1. If age > 54 years and with absence of normal menses: serum FSH (Follicle Stimulating Hormone) level elevated to within the post-menopausal range based on the laboratory reference range where the hormonal assay is performed 2. If age < 54 years and with the absence of normal menses: negative serum or urine -hCG with concurrently elevated serum FSH (Follicle Stimulating Hormone) level in the post-menopausal, depressed estradiol (E2) level in the post-menopausal range, and absent serum progesterone level, based on the laboratory reference ranges where the hormonal assay is performed.",
                     "type": "display"
                 },
                 {
@@ -457,7 +457,7 @@
                 },
                 {
                     "linkId": "7.4",
-                    "text": "3. I understand that I must completely avoid having any sexual contact (penis-vaginal) with a partner who coud get me pregnant, or I must use two separate effective forms of birth control (contraception) at the same time. The only exceptions are if I have had any surgery to remove the uterus (a hysterectomy) or both of my ovaries (bilateral oophorectomy), or my doctor has medically confirmed that I am post-menopausal.",
+                    "text": "3. I understand that I must completely avoid having any sexual contact (penis-vaginal) with a partner who could get me pregnant, or I must use two separate effective forms of birth control (contraception) at the same time. The only exceptions are if I have had any surgery to remove the uterus (a hysterectomy) or both of my ovaries (bilateral oophorectomy), or my doctor has medically confirmed that I am post-menopausal.",
                     "type": "boolean",
                     "required": true
                 },
@@ -515,13 +515,13 @@
                 },
                 {
                     "linkId": "7.10",
-                    "text": "9. I cannot get my first prescription for isotretinoin unless my doctor has told me that I have two negative pregnancy test results. The first pregnancy test should be done when my doctor decides to prescribe isotretinoin. The second pregnancy test must be done in a lab during the first 5 days of my menstural period right before starting isotretinoin therapy treatment, or as instructed by my doctor. I will then have one pregnancy test; in a lab: • every month during treatment • at the end of treatment • and 1 month after stopping treatment. I must not start taking isotretinoin until I am  sure that I am not pregnant, have negative results from two pregnancy tests, and the second test has been done in a lab.",
+                    "text": "9. I cannot get my first prescription for isotretinoin unless my doctor has told me that I have two negative pregnancy test results. The first pregnancy test should be done when my doctor decides to prescribe isotretinoin. The second pregnancy test must be done in a lab during the first 5 days of my menstrual period right before starting isotretinoin therapy treatment, or as instructed by my doctor. I will then have one pregnancy test; in a lab: • every month during treatment • at the end of treatment • and 1 month after stopping treatment. I must not start taking isotretinoin until I am  sure that I am not pregnant, have negative results from two pregnancy tests, and the second test has been done in a lab.",
                     "type": "boolean",
                     "required": true
                 },
                 {
                     "linkId": "7.11",
-                    "text": "10. I have read and understand the materials my doctor has provided to me, including the iPLEDGE REMS Guide for Patients who Can Get Pregnant and iPLEDGE REMS Fact Sheet. I have recieved information on emergency birth control.",
+                    "text": "10. I have read and understand the materials my doctor has provided to me, including the iPLEDGE REMS Guide for Patients who Can Get Pregnant and iPLEDGE REMS Fact Sheet. I have received information on emergency birth control.",
                     "type": "boolean",
                     "required": true
                 },
@@ -539,7 +539,7 @@
                 },
                 {
                     "linkId": "7.14",
-                    "text": "13. I understand that being qualified to receive isotretinoin in the iPLEDGE REMS means that I: • have had two negative urine or blood pregnancy tests before receiving the first isotretinoin prescription. The second test must be done in a lab. I must have a negative result from a urine or blood pregnancy test done in a lab repeated each month before I recieve another isotretinoin prescription • have chosen and agreed to use two forms of effective birth control at the same time. At least one method must be a primary method of birth control unless I have chosen never to have sexual contact (penis-vaginal) with a partner who could get me pregnant (abstinence), or I have undergone a hysterectomy or bilateral oophorectomy, or I have been medically confirmed to be post-menopausal. I must use two forms of birth control for at least one month before I start isotretinoin therapy. I must receieve counseling, repeated on a monthly basis, about birth control and behaviors associated with an increased risk of pregnancy • have signed an Informed Consent For Patients Who Can Get Pregnant (for patients who can get pregnant) that contains warmings about the chance of possible birth defects if I am pregnant or becoming pregnant and my unborn baby is exposed to isotretinoin • have been informed of and understand the purpose and importance of providing information to the iPLEDGE REMS should I become pregnant while taking isotretinoin or within 1 month of the last dose • have interacted with the iPLEDGE REMS before starting isotretinoin and on a monthly basis to answer questions on the program requirements and to enter my two chosen forms of birth control",
+                    "text": "13. I understand that being qualified to receive isotretinoin in the iPLEDGE REMS means that I: • have had two negative urine or blood pregnancy tests before receiving the first isotretinoin prescription. The second test must be done in a lab. I must have a negative result from a urine or blood pregnancy test done in a lab repeated each month before I receive another isotretinoin prescription • have chosen and agreed to use two forms of effective birth control at the same time. At least one method must be a primary method of birth control unless I have chosen never to have sexual contact (penis-vaginal) with a partner who could get me pregnant (abstinence), or I have undergone a hysterectomy or bilateral oophorectomy, or I have been medically confirmed to be post-menopausal. I must use two forms of birth control for at least one month before I start isotretinoin therapy. I must receive counseling, repeated on a monthly basis, about birth control and behaviors associated with an increased risk of pregnancy • have signed an Informed Consent For Patients Who Can Get Pregnant (for patients who can get pregnant) that contains warnings about the chance of possible birth defects if I am pregnant or becoming pregnant and my unborn baby is exposed to isotretinoin • have been informed of and understand the purpose and importance of providing information to the iPLEDGE REMS should I become pregnant while taking isotretinoin or within 1 month of the last dose • have interacted with the iPLEDGE REMS before starting isotretinoin and on a monthly basis to answer questions on the program requirements and to enter my two chosen forms of birth control",
                     "type": "boolean",
                     "required": true
                 },

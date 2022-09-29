@@ -12,7 +12,7 @@
     "extension": [
       {
         "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
-        "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/DrugHasREMSPrescriberEnrollment-prepopulation"
+        "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/TuralioPrescriberEnrollment-prepopulation"
       }
     ],
     "item": [
@@ -76,7 +76,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/cql",
-                          "expression": "\"DrugHasREMSPrescriberEnrollmentPrepopulation\".Credentials"
+                          "expression": "\"TuralioPrescriberEnrollmentPrepopulation\".Credentials"
                         }
                       }
                     ],
@@ -123,7 +123,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/cql",
-                          "expression": "\"DrugHasREMSPrescriberEnrollmentPrepopulation\".Specialty"
+                          "expression": "\"TuralioPrescriberEnrollmentPrepopulation\".Specialty"
                         }
                       }
                     ],
@@ -173,7 +173,7 @@
                       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                       "valueExpression": {
                         "language": "text/cql",
-                        "expression": "\"DrugHasREMSPrescriberEnrollmentPrepopulation\".MD"
+                        "expression": "\"TuralioPrescriberEnrollmentPrepopulation\".MD"
                       }
                     }
                   ]
@@ -188,7 +188,7 @@
                         "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                         "valueExpression": {
                           "language": "text/cql",
-                          "expression": "\"DrugHasREMSPrescriberEnrollmentPrepopulation\".OrgName"
+                          "expression": "\"TuralioPrescriberEnrollmentPrepopulation\".OrgName"
                         }
                       }
                     ]
@@ -308,7 +308,7 @@
                       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                       "valueExpression": {
                         "language": "text/cql",
-                        "expression": "\"DrugHasREMSPrescriberEnrollmentPrepopulation\".PreferredCommunication"
+                        "expression": "\"TuralioPrescriberEnrollmentPrepopulation\".PreferredCommunication"
                       }
                     }
                   ],
@@ -467,7 +467,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrescriberEnrollmentPrepopulation\".ThirdPartyCredentials"
+                    "expression": "\"TuralioPrescriberEnrollmentPrepopulation\".ThirdPartyCredentials"
                   }
                 }
               ]
@@ -482,7 +482,7 @@
                   "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
                   "valueExpression": {
                     "language": "text/cql",
-                    "expression": "\"DrugHasREMSPrescriberEnrollmentPrepopulation\".ThirdPartyIssuer"
+                    "expression": "\"TuralioPrescriberEnrollmentPrepopulation\".ThirdPartyIssuer"
                   }
                 }
               ]
