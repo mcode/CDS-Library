@@ -9,6 +9,12 @@
     ],
     "date": "2020-05-20",
     "publisher": "Da Vinci DTR",
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/cqf-library",
+        "valueCanonical": "http://hl7.org/fhir/us/davinci-dtr/Library/TIRF-prepopulation"
+      }
+    ],
     "item": [
       {
         "linkId": "1",
@@ -452,25 +458,53 @@
             "linkId": "5.2",
             "text": "TIRF Product Name",
             "type": "string",
-            "required": true
+            "required": true,
+            "enableWhen": [
+              {
+                "question": "5.1",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
           },
           {
             "linkId": "5.3",
             "text": "Strength",
             "type": "string",
-            "required": true
+            "required": true,
+            "enableWhen": [
+              {
+                "question": "5.1",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
           },
           {
             "linkId": "5.4",
             "text": "Dose",
             "type": "string",
-            "required": true
+            "required": true,
+            "enableWhen": [
+              {
+                "question": "5.1",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
           },
           {
             "linkId": "5.5",
             "text": "Frequency",
             "type": "string",
-            "required": true
+            "required": true,
+            "enableWhen": [
+              {
+                "question": "5.1",
+                "operator": "=",
+                "answerBoolean": true
+              }
+            ]
           },
           {
             "linkId": "5.6",
@@ -489,6 +523,13 @@
                   "code": "Non-cancer Pain",
                   "display": "Non-cancer Pain"
                 }
+              }
+            ],
+            "enableWhen": [
+              {
+                "question": "5.1",
+                "operator": "=",
+                "answerBoolean": true
               }
             ]
           }
@@ -520,38 +561,294 @@
               {
                 "linkId": "6.1.1",
                 "text": "Moiety",
-                "type": "string",
-                "required": true
+                "type": "open-choice",
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7052",
+                      "display": "Morphine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "1819",
+                      "display": "Buprenorphine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "2670",
+                      "display": "Codeine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "4337",
+                      "display": "Fentanyl"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "5489",
+                      "display": "Hydrocodone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "3423",
+                      "display": "Hydromorphone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "6378",
+                      "display": "Levorphanol"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "6754",
+                      "display": "Meperidine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "6813",
+                      "display": "Methadone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7804",
+                      "display": "Oxycodone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7814",
+                      "display": "Oxymorphone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "8001",
+                      "display": "Pentazocine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "787390",
+                      "display": "Tapentadol"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "10689",
+                      "display": "Tramadol"
+                    }
+                  }
+                ],
+                "required": true,
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Moiety1"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.1.2",
                 "text": "Formulation",
-                "type": "string",
-                "required": true
+                "type": "open-choice",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Form1"
+                    }
+                  }
+                ],
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "421026006",
+                      "display": "Oral Tablet"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "421155001",
+                      "display": "Prolonged-release oral tablet"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "1163573008",
+                      "display": "Film-coated oral tablet"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "420378007",
+                      "display": "Prolonged-release film-coated oral tablet (dose form)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385114002",
+                      "display": "Prolonged-release transdermal patch (dose form)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "764485007",
+                      "display": "Conventional release cutaneous patch (dose form)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "443424002",
+                      "display": "Buccal Film"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385023001",
+                      "display": "Oral solution"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385053008",
+                      "display": "Prolonged-release oral capsule"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "420692007",
+                      "display": "Oral capsule"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385032004",
+                      "display": "Syrup"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.1.3",
                 "text": "Strength",
                 "type": "string",
-                "required": true
+                "required": true,
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Strength1"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.1.4",
                 "text": "Route",
-                "type": "string",
-                "required": true
+                "type": "open-choice",
+                "required": true,
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Route1"
+                    }
+                  }
+                ],
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "26643006",
+                      "display": "Oral"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": " 45890007",
+                      "display": "Transdermal"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "54471007",
+                      "display": "Buccal"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.1.5",
                 "text": "Dose",
                 "type": "string",
-                "required": true
+                "required": true,
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Dose1"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.1.6",
                 "text": "Frequency",
                 "type": "string",
-                "required": true
+                "required": true,
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Frequency1"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -575,32 +872,288 @@
               {
                 "linkId": "6.2.1",
                 "text": "Moiety",
-                "type": "string"
+                "type": "open-choice",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Moiety2"
+                    }
+                  }
+                ],
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7052",
+                      "display": "Morphine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "1819",
+                      "display": "Buprenorphine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "2670",
+                      "display": "Codeine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "4337",
+                      "display": "Fentanyl"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "5489",
+                      "display": "Hydrocodone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "3423",
+                      "display": "Hydromorphone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "6378",
+                      "display": "Levorphanol"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "6754",
+                      "display": "Meperidine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "6813",
+                      "display": "Methadone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7804",
+                      "display": "Oxycodone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7814",
+                      "display": "Oxymorphone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "8001",
+                      "display": "Pentazocine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "787390",
+                      "display": "Tapentadol"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "10689",
+                      "display": "Tramadol"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.2.2",
                 "text": "Formulation",
-                "type": "string"
+                "type": "open-choice",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Form2"
+                    }
+                  }
+                ],
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "421026006",
+                      "display": "Oral Tablet"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "421155001",
+                      "display": "Prolonged-release oral tablet"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "1163573008",
+                      "display": "Film-coated oral tablet"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "420378007",
+                      "display": "Prolonged-release film-coated oral tablet (dose form)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385114002",
+                      "display": "Prolonged-release transdermal patch (dose form)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "764485007",
+                      "display": "Conventional release cutaneous patch (dose form)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "443424002",
+                      "display": "Buccal Film"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385023001",
+                      "display": "Oral solution"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385053008",
+                      "display": "Prolonged-release oral capsule"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "420692007",
+                      "display": "Oral capsule"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385032004",
+                      "display": "Syrup"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.2.3",
                 "text": "Strength",
-                "type": "string"
+                "type": "string",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Strength2"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.2.4",
                 "text": "Route",
-                "type": "string"
+                "type": "open-choice",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Route2"
+                    }
+                  }
+                ],
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "26643006",
+                      "display": "Oral"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": " 45890007",
+                      "display": "Transdermal"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "54471007",
+                      "display": "Buccal"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.2.5",
                 "text": "Dose",
-                "type": "string"
+                "type": "string",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Dose2"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.2.6",
                 "text": "Frequency",
-                "type": "string"
+                "type": "string",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Frequency2"
+                    }
+                  }
+                ]
               }
             ]
           },
@@ -624,32 +1177,289 @@
               {
                 "linkId": "6.3.1",
                 "text": "Moiety",
-                "type": "string"
+                "type": "open-choice",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Moiety3"
+                    }
+                  }
+                ],
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7052",
+                      "display": "Morphine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "1819",
+                      "display": "Buprenorphine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "2670",
+                      "display": "Codeine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "4337",
+                      "display": "Fentanyl"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "5489",
+                      "display": "Hydrocodone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "3423",
+                      "display": "Hydromorphone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "6378",
+                      "display": "Levorphanol"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "6754",
+                      "display": "Meperidine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "6813",
+                      "display": "Methadone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7804",
+                      "display": "Oxycodone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "7814",
+                      "display": "Oxymorphone"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "8001",
+                      "display": "Pentazocine"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "787390",
+                      "display": "Tapentadol"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                      "code": "10689",
+                      "display": "Tramadol"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.3.2",
                 "text": "Formulation",
-                "type": "string"
+                "type": "open-choice",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Form3"
+                    }
+                  }
+                ],
+                "answerValueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.4.642.3.374",
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "421026006",
+                      "display": "Oral Tablet"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "421155001",
+                      "display": "Prolonged-release oral tablet"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "1163573008",
+                      "display": "Film-coated oral tablet"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "420378007",
+                      "display": "Prolonged-release film-coated oral tablet (dose form)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385114002",
+                      "display": "Prolonged-release transdermal patch (dose form)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "764485007",
+                      "display": "Conventional release cutaneous patch (dose form)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "443424002",
+                      "display": "Buccal Film"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385023001",
+                      "display": "Oral solution"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385053008",
+                      "display": "Prolonged-release oral capsule"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "420692007",
+                      "display": "Oral capsule"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "385032004",
+                      "display": "Syrup"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.3.3",
                 "text": "Strength",
-                "type": "string"
+                "type": "string",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Strength3"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.3.4",
                 "text": "Route",
-                "type": "string"
+                "type": "open-choice",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Route3"
+                    }
+                  }
+                ],
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "26643006",
+                      "display": "Oral"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": " 45890007",
+                      "display": "Transdermal"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "system": "http://snomed.info/sct",
+                      "code": "54471007",
+                      "display": "Buccal"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.3.5",
                 "text": "Dose",
-                "type": "string"
+                "type": "string",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Dose3"
+                    }
+                  }
+                ]
               },
               {
                 "linkId": "6.3.6",
                 "text": "Frequency",
-                "type": "string"
+                "type": "string",
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "\"TIRFPrepopulation\".Frequency3"
+                    }
+                  }
+                ]
               }
             ]
           },
