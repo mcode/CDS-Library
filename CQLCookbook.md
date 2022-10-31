@@ -64,7 +64,6 @@ codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "LOINC": 'http://loinc.org'
 codesystem "SNOMED-CT": 'http://snomed.info/sct'
 codesystem "HCPCS": 'https://bluebutton.cms.gov/resources/codesystem/hcpcs'
-codesystem "FHIRRequestIntent": 'http://hl7.org/fhir/request-intent'
 ```
 Note:
 - Above are frequently used codesystems for Conditions, Observations, and Procedures.
